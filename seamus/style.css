@@ -16,12 +16,12 @@ h1, h2, h3, h4, p {
 
 h1 {
   text-transform: uppercase;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.25em;
 }
 
 h2 {
   font-size: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 3em;
 }
 
 p {
@@ -66,7 +66,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -75,7 +75,7 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container > * {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
@@ -102,7 +102,7 @@ body {
   background-attachment: fixed;
   z-index: -1;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .img-wrap::after {
     background-attachment: scroll;
   }
@@ -157,7 +157,7 @@ body {
     padding-left: 6rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .left, .center, .right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -177,6 +177,6 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   background-color: rgba(0, 0, 0, 0.8);
 }
