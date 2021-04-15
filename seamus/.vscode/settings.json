@@ -1,0 +1,10 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      // Save css file in root folder
+      "savePath": "~/../"
+    }
+  ]
+}
