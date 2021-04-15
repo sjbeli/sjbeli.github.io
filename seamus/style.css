@@ -47,7 +47,7 @@ a:hover, a:active, a:focus {
 
 body {
   margin: 0 auto;
-  padding: 0.75rem;
+  padding: 0;
   min-width: 320px;
   max-width: 1280px;
   color: white;
@@ -143,18 +143,17 @@ body {
   position: relative;
   height: 100vh;
   margin: auto;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   overflow: hidden;
 }
 @media (min-width: 400px) {
   .left, .center, .right {
-    padding: 0 3rem;
+    padding: 0 3.125rem;
   }
 }
 @media (min-width: 600px) {
   .left, .center, .right {
-    padding-right: 6rem;
-    padding-left: 6rem;
+    padding: 0 6.25rem;
   }
 }
 @media (min-width: 992px) {
@@ -166,8 +165,7 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 0 2rem;
     padding-top: 50vh;
     min-height: 600px;
   }
