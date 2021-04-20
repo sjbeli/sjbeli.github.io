@@ -56,12 +56,25 @@ a:hover, a:active, a:focus {
 }
 
 .container {
-  position: relative;
   padding: 0.75rem;
+}
+@media (min-width: 992px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .img-wrap {
   position: relative;
+}
+@media (min-width: 992px) {
+  .img-wrap {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
 }
 
 .img-wrap > * {
@@ -78,10 +91,21 @@ a:hover, a:active, a:focus {
   padding: 0 2rem;
   height: 100vh;
   width: 100%;
-  background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+  .img-wrap > * {
+    /* keeps images from expanding */
+    background-attachment: scroll;
+    /* vertically center all text */
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 50vh;
+  }
 }
 
 .img-wrap > *:after {
@@ -100,7 +124,19 @@ a:hover, a:active, a:focus {
           justify-content: flex-end;
   padding-bottom: 2rem;
 }
+@media (min-width: 992px) {
+  .left {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
+.right {
+  color: #1081b1;
+}
+
+/* opacity layers for boxes */
 .left:after {
   background-color: rgba(0, 0, 0, 0.75);
 }
@@ -111,5 +147,9 @@ a:hover, a:active, a:focus {
 
 .right:after {
   background-color: rgba(255, 255, 255, 0.8);
-  color: #1081b1;
+}
+
+.box * {
+  /* brings all text selectors (h1,h2,p) forward from underneath opacity layer */
+  z-index: 1;
 }

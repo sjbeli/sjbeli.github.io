@@ -69,26 +69,41 @@ a:hover, a:active, a:focus {
 
 
 .container {
-  position: relative;
   padding: 0.75rem;
+
+  @include atLarge {
+    display: flex;
+  }
 }
 
 .img-wrap {
   position: relative;
+
+  @include atLarge {
+    flex: 0 1 100%;
+  }
 }
+
 .img-wrap > * {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding: 0 2rem;
 
   height: 100vh;
   width: 100%;
-  background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  @include atLarge {
+    /* keeps images from expanding */
+    background-attachment: scroll;
+    /* vertically center all text */
+    justify-content: flex-start;
+    padding-top: 50vh;
+  }
 }
 .img-wrap > *:after {
   content: '';
@@ -101,8 +116,16 @@ a:hover, a:active, a:focus {
 .left {
   justify-content: flex-end;
   padding-bottom: 2rem;
+
+  @include atLarge {
+    justify-content: flex-start;
+  }
+}
+.right {
+  color: #1081b1;
 }
 
+/* opacity layers for boxes */
 .left:after {
   background-color: rgba(0, 0, 0, 0.75);
 }
@@ -111,5 +134,9 @@ a:hover, a:active, a:focus {
 }
 .right:after {
   background-color: rgba(255, 255, 255, 0.8);
-  color: #1081b1;
+}
+
+.box * {
+  /* brings all text selectors (h1,h2,p) forward from underneath opacity layer */
+  z-index: 1;
 }
