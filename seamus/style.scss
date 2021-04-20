@@ -119,6 +119,8 @@ a:hover, a:active, a:focus {
 .img-wrap > *:after {
   content: '';
   position: absolute;
+  display: block;
+  height: auto;
   top: 0; bottom: 0;
   left: 0; right: 0;
 }
