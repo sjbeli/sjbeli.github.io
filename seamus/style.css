@@ -98,9 +98,9 @@ a:hover, a:active, a:focus {
 }
 @media (min-width: 992px) {
   .img-wrap > * {
-    /* keeps images from expanding */
+    /* keeps images from expanding > 992px */
     background-attachment: scroll;
-    /* vertically center all text */
+    /* vertically center all text > 992px */
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -126,6 +126,7 @@ a:hover, a:active, a:focus {
 }
 @media (min-width: 992px) {
   .left {
+    /* reset justify-content to vertically center all text > 992px */
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -136,7 +137,7 @@ a:hover, a:active, a:focus {
   color: #1081b1;
 }
 
-/* opacity layers for boxes */
+/* opacity layers for left, center, right boxes */
 .left:after {
   background-color: rgba(0, 0, 0, 0.75);
 }
@@ -150,6 +151,6 @@ a:hover, a:active, a:focus {
 }
 
 .box * {
-  /* brings all text selectors (h1,h2,p) forward from underneath opacity layer */
+  /* bring all text selectors (h1,h2,p) forward from underneath above opacity layers */
   z-index: 1;
 }
