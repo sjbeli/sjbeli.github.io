@@ -9,6 +9,16 @@ html {
           box-sizing: inherit;
 }
 
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-width: 320px;
+  max-width: 1280px;
+  background-color: black;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
@@ -45,91 +55,16 @@ a:hover, a:active, a:focus {
   color: darkorange;
 }
 
-body {
-  margin: 0 auto;
-  padding: 0;
-  min-width: 320px;
-  max-width: 1280px;
-  color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-@media (min-width: 992px) {
-  .container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-@media (min-width: 992px) {
-  .container > * {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
-  }
+  position: relative;
+  padding: 0.75rem;
 }
 
 .img-wrap {
   position: relative;
 }
 
-.img-wrap::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: -1;
-}
-@media (min-width: 992px) {
-  .img-wrap::after {
-    background-attachment: scroll;
-  }
-}
-
-.img-left::after {
-  background-image: url(./img/croc-eye.jpg);
-}
-
-.img-center::after {
-  background-image: url(./img/suset-mood-ukraine.jpg);
-}
-
-.img-right::after {
-  background-image: url(./img/venice-italy.jpg);
-}
-
-.center {
-  background-color: rgba(16, 129, 177, 0.7);
-}
-
-.right {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #1081b1;
-}
-
-.left, .center, .right {
+.img-wrap > * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,41 +75,41 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  height: 100vh;
-  margin: auto;
   padding: 0 2rem;
-  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
 }
-@media (min-width: 400px) {
-  .left, .center, .right {
-    padding: 0 3.125rem;
-  }
-}
-@media (min-width: 600px) {
-  .left, .center, .right {
-    padding: 0 6.25rem;
-  }
-}
-@media (min-width: 992px) {
-  .left, .center, .right {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding: 0 2rem;
-    padding-top: 50vh;
-    min-height: 600px;
-  }
+
+.img-wrap > *:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .left {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-bottom: 3rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 2rem;
+}
+
+.left:after {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.center:after {
+  background-color: rgba(16, 129, 177, 0.75);
+}
+
+.right:after {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1081b1;
 }
