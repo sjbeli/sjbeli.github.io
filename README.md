@@ -1,6 +1,8 @@
-## Just Testing Here:
+## Just Testing Basic Stuff Here:
 
-DF-Site-Sturcture: [click here](https://sjbeli.github.io/seamus/)
+ST Site Structure: [test-site-1](https://sjbeli.github.io/test-site-1/)
+
+LD Site Structure: [test-site-2](https://sjbeli.github.io/test-site-2/)
 
 Maybe on day... in a galaxy far away, not unlike out own - ALL the fucking web browsers will meet up and play with the SAME fucking rules. But maybe that's just an impossible thing - for no apparent reason other than - stupid. Plain stupid.
 
