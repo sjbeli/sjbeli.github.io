@@ -1,13 +1,17 @@
-## Just Testing Basic Stuff Here:
+## Just Testing Basic Structure Stuff
 
-ST Site Structure: [test-site-1](https://sjbeli.github.io/test-site-1/)
+1. ST Site Structure: [test-site-1](https://sjbeli.github.io/test-site-1/)
 
-LD Site Structure: [test-site-2](https://sjbeli.github.io/test-site-2/)
+2. LD Site Structure: [test-site-2](https://sjbeli.github.io/test-site-2/)
 
-Maybe on day... in a galaxy far away, not unlike out own - ALL the fucking web browsers will meet up and play with the SAME fucking rules. But maybe that's just an impossible thing - for no apparent reason other than - stupid. Plain stupid.
+---
 
-Stupid rats on wheels... making different wheels for everyone - to keep everyone on stupid rat wheels. Yea, we need more languages, more frameworks that continually need updating. Can anyone see the massive insanity? Oh, not yet? Well, maybe one day soon...
+Maybe one day soon... ALL web browsers will meet up and finally decide to play by the SAME f\*\*king rules! Is this impossible thinking? - The way things are, and always have been is just plain stupid.
 
-Tech people can be so smart - and yet, SO fucking STUPID! Lost in the trees, lost in the forest, but keeping busier than bees 'n beavers - stinging everything/everyone in sight - building shitty stuff, thinking it's cooler than ever.
+Stupid, annoying rats on wheels... making different wheels for everyone to run on. Yea, we need more languages & frameworks that continually need updating, too. Just get it out the door and fix it later - because money. Can anyone see the insanity? Oh, not yet? Well, maybe open your f\*\*cking eyes... for once.
 
-I really enjoy the consistent inconsistency of everything NEW created. Stupid fucking humans. Amazingly stupid. And very smart - when it comes to being stupid.
+Tech people CAN be so smart - and yet, SO fu\*\*ing STUPID! Lost in the trees, lost in the forest, with the eyes blinded, but keeping busier than bees 'n beavers - stinging everything/everyone in sight - building shitty stuff, thinking it's cooler than ever.
+
+Maybe nerds are the new lawyers... above the law. Creating things only they can use - like lawyers, politicians. The more the world changes, the more it stay the same - looking different - but nonetheless, the same.
+
+Stupid \*\*cking humans. Amazingly stupid. Really only very smart when it comes to being stupid.
