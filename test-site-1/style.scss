@@ -90,6 +90,7 @@ a:hover, a:active, a:focus {
   justify-content: center;
   padding: 0 2rem;
   height: 100vh;
+  min-height: 540px;
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -104,16 +105,14 @@ a:hover, a:active, a:focus {
   }
 
   @include atLarge {
-    /* reset padding to base > 992px */
-    padding: 0 2rem;
-  }
-
-  @include atLarge {
-    /* keeps images from expanding > 992px */
+    /* keeps images from expanding */
     background-attachment: scroll;
-    /* vertically center all text > 992px */
+    /* vertically center all text */
     justify-content: flex-start;
+    /* reset padding to base */
+    padding: 0 2rem;
     padding-top: 50vh;
+    min-height: 670px;
   }
 }
 .img-wrap > *:after {
@@ -130,7 +129,7 @@ a:hover, a:active, a:focus {
   padding-bottom: 2rem;
 
   @include atLarge {
-    /* reset justify-content to vertically center all text > 992px */
+    /* reset justify-content to vertically center all text */
     justify-content: flex-start;
   }
 }
