@@ -1,8 +1,8 @@
-## Testing Basic Flexbox Structure
+## Playing With Basic Flexbox Structure
 
-1. ST Mock Site: [test-site-1](https://sjbeli.github.io/test-site-1/)
+1. ST Mock Site: [one](https://sjbeli.github.io/one/)
 
-2. LD Mock Site: [test-site-2](https://sjbeli.github.io/test-site-2/)
+2. LD Mock Site: [two](https://sjbeli.github.io/two)
 
 ---
 
