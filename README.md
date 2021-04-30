@@ -12,8 +12,10 @@ The way things are - and always have been - is _stupid_. No, wait - it's far wor
 
 Furthermore - this thing of humans NEVER having any time? That's simply a part of our great, civilized, 'intelligent' human design-doing. We did this to ourselves and continue to do so. Partly because browsers still suck. And the general quality of - most things, just isn't a priority anymore. Everything is going nowhere - quickly 💩
 
+<!--
+
 ---
 
-<!-- 1. ST Mock Site: [one](https://sjbeli.github.io/one/)
+1. ST Mock Site: [one](https://sjbeli.github.io/one/)
 
 2. LD Mock Site: [two](https://sjbeli.github.io/two) -->
