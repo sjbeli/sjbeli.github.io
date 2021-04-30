@@ -8,9 +8,9 @@ Maybe one day - soon, ALL web browser 'players' will meet up to discuss the impl
 
 Is this naive, impossible thinking on my part? 🦉
 
-The way things are - and always have been - is _stupid_. No, wait - it's far worse. It's a new level of blind, intelligently-arrogant, butt-fuck-stupid.
+The way things are - and always have been - is _stupid_. No, wait - it's far worse. It's a new level of blind, intelligently-arrogant, butt-f\*\*k-stupid.
 
-Furthermore - this thing of humans NEVER having any time? That's simply a part of our great, civilized, 'intelligent' human design-doing. We 💯 did this to ourselves. Partly because browsers still suck! 💩
+Furthermore - this thing of humans NEVER having any time? That's simply a part of our great, civilized, 'intelligent' human design-doing. We 💯 did this to ourselves. And continue to do so. Partly because browsers still suck! 💩
 
 ---
 
