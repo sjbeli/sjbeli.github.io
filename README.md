@@ -2,15 +2,17 @@
 
 ### Neither Do I
 
-#### I'm Done
+#### I'm So Done With Web Development For Now
 
-Maybe one day - soon, ALL web browser 'players' will meet up to discuss the implementation of - the _SAME_ f\*\*king rules across the board!
+The way things are - and always have been - is just _stupid_.
 
-Is this naive, impossible thinking on my part? 🦉
+And maybe we all should be done with this time consuming 💩 show that runs the 'world.'
 
-The way things are - and always have been - is _stupid_. No, wait - it's far worse. It's a new level of blind, intelligently-arrogant, butt-f\*\*kingly-stupid.
+Unless perhaps, one day soon, web browser geniuses could meet to discuss successfull implementation of say - the _SAME_ f\*\*king rules across the board for all?!
 
-Furthermore - this thing of humans NEVER having any time? That's simply a part of our great, civilized, 'intelligent' human design-doing. We did this to ourselves and continue to do so. Partly because browsers still suck. And the general quality of - most things, just isn't a priority anymore. Everything is going nowhere - quickly 💩
+Naively impossible thinking on my part - I know - that must be so hard to do 🦉
+
+Furthermore - this thing of humans NEVER having any time? That's a part of our immensely civilized, human-design-doing. We did it to ourselves. And continue to do so. Because we're just that smart. Partly because, even after all these years, web browsers still suck. Quality just isn't a priority anymore. While everything continues going nowhere - quicker than ever!
 
 <!--
 
