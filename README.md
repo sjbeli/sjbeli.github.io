@@ -1,6 +1,6 @@
-### I'm So Done With Web Development For Now
+### Taking a 'lil Break From Web Development
 
-Just tired of the 💩 show
+Just tired of the overall crazy 💩 show
 
 <!--
 
