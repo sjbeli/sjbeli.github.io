@@ -1,7 +1,8 @@
-### Taking a 'lil Break From Web Development
+### Taking a 'lil Break From Web Dev
 
-Just tired of the overall crazy 💩 show
-
+Need a break from the royal 💩 show.
+Need more O.I. in my life.
+O = organic
 <!--
 
 ---
