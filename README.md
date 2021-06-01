@@ -1,7 +1,9 @@
 ### Taking a 'lil Break From Web Dev
 
-Need a break from the royal 💩 show.
-Need more O.I. in my life.
+Need a break from the royal 💩 show.  
+
+Need more O.I. in my life.  
+
 O = organic
 <!--
 
