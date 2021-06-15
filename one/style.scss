@@ -34,7 +34,7 @@ body {
   margin: 0 auto;
   padding: 0;
   min-width: 320px;
-  max-width: 1280px;
+  max-width: 2560px;
   background-color: black;
   color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -43,6 +43,8 @@ h1,h2,h3,h4,p {
   margin: 0; padding: 0;
 }
 h1 {
+  /* font-size: 6rem; */
+  font-size: 3.5rem;
   text-transform: uppercase;
   padding-bottom: 0.25em;
 }
@@ -67,11 +69,10 @@ a:hover, a:active, a:focus {
   color: darkorange;
 }
 
-
 .container {
   padding: 0.75rem;
 
-  @include atLarge {
+  @include atMedium {
     display: flex;
   }
 }
@@ -79,7 +80,7 @@ a:hover, a:active, a:focus {
 .img-wrap {
   position: relative;
 
-  @include atLarge {
+  @include atMedium {
     flex: 0 1 100%;
   }
 }
@@ -104,7 +105,7 @@ a:hover, a:active, a:focus {
     padding: 0 6rem;
   }
 
-  @include atLarge {
+  @include atMedium {
     /* keeps images from expanding */
     background-attachment: scroll;
     /* vertically center all text */
@@ -128,24 +129,34 @@ a:hover, a:active, a:focus {
   justify-content: flex-end;
   padding-bottom: 2rem;
 
-  @include atLarge {
+  @include atMedium {
     /* reset justify-content to vertically center all text */
     justify-content: flex-start;
   }
 }
+.left h1 {
+  /* font-size: 3.5rem; */
+}
+.center h1 {
+  text-align: left;
+
+  @include atMedium {
+    text-align: right;
+  }
+}
 .right {
-  color: #1081b1;
+  color: #0e5cca;
 }
 
 /* opacity layers for left, center, right boxes */
 .left:after {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .center:after {
-  background-color: rgba(16, 129, 177, 0.75);
+  background-color: rgba(0, 77, 211, 0.75);
 }
 .right:after {
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.8); */
 }
 
 .box * {
