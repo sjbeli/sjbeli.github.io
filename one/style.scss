@@ -25,10 +25,9 @@
 }
 html {
   scroll-behavior: smooth;
-  box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 body {
   margin: 0 auto;
@@ -40,7 +39,8 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h1,h2,h3,h4,p {
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   /* font-size: 6rem; */
@@ -70,10 +70,11 @@ a:hover, a:active, a:focus {
 }
 
 .container {
-  padding: 0.75rem;
+  padding: 0.625rem;
 
   @include atMedium {
     display: flex;
+    padding: 1rem;
   }
 }
 
@@ -81,7 +82,7 @@ a:hover, a:active, a:focus {
   position: relative;
 
   @include atMedium {
-    flex: 0 1 100%;
+    flex: 1 1 100%;
   }
 }
 
@@ -102,18 +103,24 @@ a:hover, a:active, a:focus {
   }
 
   @include atMedium {
-    padding: 0 6rem;
-  }
-
-  @include atMedium {
     /* keeps images from expanding */
     background-attachment: scroll;
     /* vertically center all text */
     justify-content: flex-start;
     /* reset padding to base */
-    padding: 0 2rem;
+    padding: 0 1rem;
     padding-top: 50vh;
     min-height: 670px;
+  }
+
+  @include atLarge {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include atXLarge {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 .img-wrap > *:after {
@@ -134,9 +141,7 @@ a:hover, a:active, a:focus {
     justify-content: flex-start;
   }
 }
-.left h1 {
-  /* font-size: 3.5rem; */
-}
+
 .center h1 {
   text-align: left;
 
@@ -146,6 +151,10 @@ a:hover, a:active, a:focus {
 }
 .right {
   color: #0e5cca;
+
+  @include atLarge {
+    padding-right: 1rem;
+  }
 }
 
 /* opacity layers for left, center, right boxes */
@@ -157,6 +166,10 @@ a:hover, a:active, a:focus {
 }
 .right:after {
   /* background-color: rgba(255, 255, 255, 0.8); */
+}
+
+.box {
+  background-position: center;
 }
 
 .box * {
