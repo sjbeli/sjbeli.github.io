@@ -1,10 +1,10 @@
-### Taking a 'lil Break From Web Dev
+### Taking a 'lil Break From Web Development
 
-Need a break from the royal 💩 show  
+Need a break from the 💩 show
 
-Need more O.I. in my life 🙂  
+Need more O.I. (not A.I.) in my life 🙂
 
-O = organic  
+O = organic
 
 <!--
 
