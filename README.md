@@ -1,6 +1,6 @@
 ### Takin' a break from web-development
 
-Need a break from the infintely-sensless-changing-at-light-speed, bug-ridden-because-who-really-cares, way-out-of-MAJOR-blance 💩 shit-show that mindlessly, helplessly consumes the lives of socially inept nerds (the new lawyers), at the expense of everyone & enerything that's REALLY important.
+...from the infintely-sensless-changing-@light-speed, bug-ridden-because-no-one-really-cares, way-out-of-MAJOR-balance, $$driven-💩-shit-show that mindlessly & helplessly consumes lives of inept nerds (our new lawyers) who - at the expense of everyone & everything - exploit all that's REALLY important - because they can't think further than their code working to make someone $$ or to look cool.
 
 Personally - I need more O.I. (FAR superior to A.I.) in my life 🙂
 
