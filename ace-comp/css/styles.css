@@ -10,9 +10,11 @@
   --black: black;
   --black2: #122620;
   --black3: #555;
-  --gray: #A5A5A5;
+  --link: #777;
   --gold: #B68D40;
   --gold2: #D6AD60;
+  --maroon: #440000;
+  --green: #008800;
   --cream: #F4EBD0;
   --white: white;
   --none: transparent;
@@ -29,7 +31,7 @@ body {
   margin: 0 auto;
   background-color: var(--white);
   color: var(--gold);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #site-header {
@@ -43,7 +45,7 @@ body {
   min-width: 290px;
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url('../img/manch-downtown-above.jpg');
+  background-image: url('../img/manch-downtown.jpg');
   background-attachment: fixed;
 }
 .overlay {
@@ -56,7 +58,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0,0,0,0.33);
   color: var(--black);
 }
 
@@ -87,7 +89,7 @@ img {
 
 .phone a:hover,
 .phone a:focus {
-  color: var(--gray);
+  color: var(--link);
 }
 
 /* FOR CONTAINER QUERIES (BELOW) */
@@ -98,6 +100,7 @@ img {
 /* NAVIGATION ITEMS *****************/
 nav {
   font-size: 0.75rem;
+  font-weight: 300;
   width: 100%;
   background-color: var(--black);
   text-transform: uppercase;
@@ -132,26 +135,27 @@ section.main {
 }
 .main h2 {
   color: var(--black2);
+  font-weight: 500;
 }
 .main a {
-  color: var(--gray);
+  color: var(--link);
   border-bottom: 1px dotted var(--black);
 }
 
 /* FONT ITEMS */
 h1 {
   font-size: 1.5rem;
+  font-weight: 400;
   color: var(--gold);
 }
 h2, h3 {
   font-size: 1rem;
-  font-style: italic;
   color: var(--gold);
 }
 a {
   color: var(--white);
   text-decoration: none;
-  transition: ease-in-out 0.33s all;
+  transition: ease-in-out 0.4s all;
 }
 a:hover,
 a:focus {
@@ -160,12 +164,12 @@ a:focus {
 }
 
 /********* CONTAINER QUERIES ***********/
-@container (min-width: 359px) {
+@container (min-width: 340px) {
   .overlay {
     justify-content: center;
   }
 }
-@container (min-width: 515px) {
+@container (min-width: 512px) {
   nav {
     font-size: 0.875rem;
   }
@@ -198,6 +202,9 @@ a:focus {
   nav {
     font-size: 1rem;
   }
+  li:first-child {
+    padding-right: 0;
+  }
 }
 
 section h1,
@@ -210,6 +217,7 @@ section p {
   font-size: 1rem;
   color: var(--black3);
   line-height: 1.6;
+  font-weight: 300;
 }
 .last {
   padding-bottom: 2.25rem;
@@ -221,8 +229,12 @@ footer {
   padding: 1.25rem 0.5rem;
   text-align: center;
   background-color: var(--black);
-  color: var(--gray);
-  line-height: 1.85;
+  color: var(--link);
+  line-height: 2;
+}
+footer p {
+  line-height: 1.9;
+  font-weight: 400;
 }
 footer a {
   border-bottom: 1px dotted var(--white);
@@ -230,4 +242,16 @@ footer a {
 footer a:hover,
 footer a:focus {
   border-bottom: none;
+}
+
+/* Google Material-Icons & Font Elements */
+.material-icons {
+  line-height: 0.5;
+}
+.location_on {
+  color: var(--green);
+}
+.med {
+  font-size: 2.25rem;
+  color: var(--green);
 }
