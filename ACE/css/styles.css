@@ -1,0 +1,233 @@
+/* Last updated 22/12/06 10:00 sjbeli */
+/* RESET ITEMS */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+/* COLORS */
+/* From: https://www.canva.com/colors/color-palettes/emerald-entrance/ */
+:root {
+  --black: black;
+  --black2: #122620;
+  --black3: #555;
+  --gray: #A5A5A5;
+  --gold: #B68D40;
+  --gold2: #D6AD60;
+  --cream: #F4EBD0;
+  --white: white;
+  --none: transparent;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* MAIN ITEMS */
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 290px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: var(--white);
+  color: var(--gold);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#site-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-height: 90vh;
+  width: 100vw;
+  max-width: 1400px;
+  min-width: 290px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('../img/manch-downtown-above.jpg');
+  background-attachment: fixed;
+}
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.55);
+  color: var(--black);
+}
+
+#logo {
+  padding: 1rem 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header-text {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+  filter: opacity(0.9);
+}
+
+.site-title,
+.site-description,
+.phone {
+  padding-bottom: 0.5rem;
+}
+
+.phone a:hover,
+.phone a:focus {
+  color: var(--gray);
+}
+
+/* FOR CONTAINER QUERIES (BELOW) */
+.container {
+  container-type: inline-size;
+}
+
+/* NAVIGATION ITEMS *****************/
+nav {
+  font-size: 0.75rem;
+  width: 100%;
+  background-color: var(--black);
+  text-transform: uppercase;
+  filter: opacity(0.9);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+li {
+  list-style-type: none;
+}
+li a {
+  display: block;
+  padding: 1rem;
+}
+li a:hover,
+li a:focus {
+  background-color: var(--none);
+}
+
+/* SECTION ITEMS */
+section.main {
+  padding: 2rem 1rem 1rem;
+}
+.main h2 {
+  color: var(--black2);
+}
+.main a {
+  color: var(--gray);
+  border-bottom: 1px dotted var(--black);
+}
+
+/* FONT ITEMS */
+h1 {
+  font-size: 1.5rem;
+  color: var(--gold);
+}
+h2, h3 {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--gold);
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+  transition: ease-in-out 0.33s all;
+}
+a:hover,
+a:focus {
+  color: var(--gold);
+  border-bottom: none;
+}
+
+/********* CONTAINER QUERIES ***********/
+@container (min-width: 359px) {
+  .overlay {
+    justify-content: center;
+  }
+}
+@container (min-width: 515px) {
+  nav {
+    font-size: 0.875rem;
+  }
+  ul {
+    padding: 0 1rem;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+  li {
+    padding-right: 1rem;
+  }
+   li:last-child {
+    padding-right: 0;
+  }
+  li a {
+    padding: 1rem 0;
+  }
+  li a:hover,
+  li a:focus {
+    background-color: transparent;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2, h3 {
+    font-size: 1.25rem;
+  }
+}
+@container (min-width: 900px) {
+  nav {
+    font-size: 1rem;
+  }
+}
+
+section h1,
+section h2,
+section h3,
+section p {
+  padding-bottom: 1rem;
+}
+section p {
+  font-size: 1rem;
+  color: var(--black3);
+  line-height: 1.6;
+}
+.last {
+  padding-bottom: 2.25rem;
+}
+
+/* FOOTER */
+footer {
+  font-size: 0.875rem;
+  padding: 1.25rem 0.5rem;
+  text-align: center;
+  background-color: var(--black);
+  color: var(--gray);
+  line-height: 1.85;
+}
+footer a {
+  border-bottom: 1px dotted var(--white);
+}
+footer a:hover,
+footer a:focus {
+  border-bottom: none;
+}
