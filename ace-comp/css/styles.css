@@ -39,7 +39,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  min-height: 82vh;
+  height: 55vh;
+  min-height: 455px;
   width: 100vw;
   max-width: 1400px;
   min-width: 290px;
@@ -59,8 +60,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.25);
-  color: var(--black);
+  background: rgba(100,100,100,0.33);
 }
 
 #logo {
@@ -165,11 +165,6 @@ a:focus {
 }
 
 /********* CONTAINER QUERIES ***********/
-@container (min-width: 340px) {
-  .overlay {
-    justify-content: center;
-  }
-}
 @container (min-width: 512px) {
   nav {
     font-size: 0.875rem;
