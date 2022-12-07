@@ -93,11 +93,6 @@ img {
   color: var(--link);
 }
 
-/* FOR CONTAINER QUERIES (BELOW) */
-.container {
-  container-type: inline-size;
-}
-
 /* NAVIGATION ITEMS *****************/
 nav {
   font-size: 0.75rem;
@@ -109,10 +104,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 5;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
-
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -124,6 +116,11 @@ li {
 li a {
   display: block;
   padding: 1rem;
+}
+
+/* adj home icon */
+li:first-child {
+  margin-bottom: -5px;
 }
 li a:hover,
 li a:focus {
@@ -165,17 +162,18 @@ a:focus {
 }
 
 /********* CONTAINER QUERIES ***********/
-@container (min-width: 512px) {
-  nav {
-    font-size: 0.875rem;
-  }
+@media screen and (min-width: 512px) {
   ul {
     padding: 0 1rem;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: nowrap;
   }
   li {
     padding-right: 1rem;
+  }
+  li:first-child {
+    padding-right: 1.5rem;
   }
    li:last-child {
     padding-right: 0;
@@ -194,7 +192,13 @@ a:focus {
     font-size: 1.25rem;
   }
 }
-@container (min-width: 900px) {
+@media screen and (min-width: 655px) {
+  nav {
+    font-size: 0.875rem;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 900px) {
   nav {
     font-size: 1rem;
   }
@@ -223,14 +227,11 @@ section p {
 footer {
   font-size: 0.875rem;
   font-weight: 400;
-  padding: 1.25rem 0.5rem;
+  padding: 1.5rem 0.5rem;
   text-align: center;
+  line-height: 1.8;
   background-color: var(--black);
   color: var(--cream);
-  line-height: 2;
-}
-footer p {
-  line-height: 1.9;
 }
 footer a {
   border-bottom: 1px dotted var(--white);
@@ -238,4 +239,13 @@ footer a {
 footer a:hover,
 footer a:focus {
   border-bottom: none;
+}
+
+/* MATERIAL-SYMBOLS-OUTLINED - GOOGLE FONTS & ICONS/SYMBOLS:
+https://fonts.google.com/icons?icon.set=Material+Symbols */
+
+.material-symbols-outlined {
+  font-size: 1.5rem;
+  line-height: 0;
+  margin-top: 0.5rem;
 }
