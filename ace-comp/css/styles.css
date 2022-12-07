@@ -1,4 +1,4 @@
-/* Last updated 22/12/07 18:20 sjbeli */
+/* Last updated 22/12/07 18:30 sjbeli */
 /* RESET ITEMS */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -14,6 +14,7 @@
   --gold2: #D6AD60;
   --cream: #F4EBD0;
   --white: white;
+  --back-opacity: 0.8;
 }
 html {
   scroll-behavior: smooth;
@@ -42,7 +43,7 @@ body {
   min-width: 290px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: bottom center;
   background-image: url('../img/manch-downtown-med.jpg');
   background-attachment: scroll;
 }
@@ -73,7 +74,7 @@ img {
   padding: 1rem 0.5rem 1.25rem;
   text-align: center;
   background-color: var(--black);
-  filter: opacity(0.9);
+  filter: opacity(var(--back-opacity));
 }
 .phone {
   padding-bottom: 0;
@@ -90,7 +91,7 @@ nav {
   width: 100%;
   background-color: var(--black);
   text-transform: uppercase;
-  filter: opacity(0.9);
+  filter: opacity(var(--back-opacity));
   position: sticky;
   top: 0;
   z-index: 5;
