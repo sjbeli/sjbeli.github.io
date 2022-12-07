@@ -39,14 +39,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  min-height: 90vh;
+  min-height: 82vh;
   width: 100vw;
   max-width: 1400px;
   min-width: 290px;
   background-size: cover;
-  background-position: 50% 50%;
-  background-image: url('../img/manch-downtown.jpg');
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-image: url('../img/manch-downtown-med.jpg');
+  background-attachment: scroll;
 }
 .overlay {
   display: flex;
@@ -58,7 +59,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.33);
+  background: rgba(0,0,0,0.25);
   color: var(--black);
 }
 
@@ -100,7 +101,7 @@ img {
 /* NAVIGATION ITEMS *****************/
 nav {
   font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 400;
   width: 100%;
   background-color: var(--black);
   text-transform: uppercase;
@@ -217,7 +218,7 @@ section p {
   font-size: 1rem;
   color: var(--black3);
   line-height: 1.6;
-  font-weight: 300;
+  font-weight: 400;
 }
 .last {
   padding-bottom: 2.25rem;
@@ -229,7 +230,7 @@ footer {
   padding: 1.25rem 0.5rem;
   text-align: center;
   background-color: var(--black);
-  color: var(--link);
+  color: var(--cream);
   line-height: 2;
 }
 footer p {
@@ -242,16 +243,4 @@ footer a {
 footer a:hover,
 footer a:focus {
   border-bottom: none;
-}
-
-/* Google Material-Icons & Font Elements */
-.material-icons {
-  line-height: 0.5;
-}
-.location_on {
-  color: var(--green);
-}
-.med {
-  font-size: 2.25rem;
-  color: var(--green);
 }
