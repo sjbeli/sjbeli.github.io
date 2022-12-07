@@ -101,7 +101,7 @@ img {
 /* NAVIGATION ITEMS *****************/
 nav {
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 500;
   width: 100%;
   background-color: var(--black);
   text-transform: uppercase;
@@ -227,6 +227,7 @@ section p {
 /* FOOTER */
 footer {
   font-size: 0.875rem;
+  font-weight: 400;
   padding: 1.25rem 0.5rem;
   text-align: center;
   background-color: var(--black);
@@ -235,7 +236,6 @@ footer {
 }
 footer p {
   line-height: 1.9;
-  font-weight: 400;
 }
 footer a {
   border-bottom: 1px dotted var(--white);
