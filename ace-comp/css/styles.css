@@ -1,4 +1,4 @@
-/* Last updated 22/12/06 10:00 sjbeli */
+/* Last updated 22/12/07 17:20 sjbeli */
 /* RESET ITEMS */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -9,20 +9,17 @@
 :root {
   --black: black;
   --black2: #122620;
-  --black3: #555;
-  --link: #777;
+  --black3: #444;
   --gold: #B68D40;
   --gold2: #D6AD60;
-  --maroon: #440000;
-  --green: #008800;
   --cream: #F4EBD0;
   --white: white;
-  --none: transparent;
 }
 html {
   scroll-behavior: smooth;
 }
-/* MAIN ITEMS */
+
+/* BODY & HEADER ITEMS */
 body {
   display: flex;
   flex-direction: column;
@@ -33,7 +30,6 @@ body {
   color: var(--gold);
   font-family: 'Quicksand', sans-serif;
 }
-
 #site-header {
   display: flex;
   flex-direction: column;
@@ -62,7 +58,6 @@ body {
   left: 0;
   background: rgba(100,100,100,0.33);
 }
-
 #logo {
   padding: 1rem 0;
 }
@@ -75,25 +70,20 @@ img {
 .header-text {
   width: 100%;
   margin: 0;
-  padding: 1rem 0;
+  padding: 1rem 0 1.25rem;
   text-align: center;
   background-color: var(--black);
-  color: var(--white);
   filter: opacity(0.9);
 }
-
-.site-title,
-.site-description,
 .phone {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0;
 }
-
 .phone a:hover,
 .phone a:focus {
-  color: var(--link);
+  color: var(--cream);
 }
 
-/* NAVIGATION ITEMS *****************/
+/* NAVIGATION ITEMS */
 nav {
   font-size: 0.75rem;
   font-weight: 500;
@@ -118,16 +108,12 @@ li a {
   padding: 1rem;
 }
 
-/* adj home icon */
+/* ADJUST HOME ICON ORIENTATION (fn google) */
 li:first-child {
   margin-bottom: -5px;
 }
-li a:hover,
-li a:focus {
-  background-color: var(--none);
-}
 
-/* SECTION ITEMS */
+/* SECTION & MAIN ITEMS */
 section.main {
   padding: 2rem 1rem 1rem;
 }
@@ -136,24 +122,29 @@ section.main {
   font-weight: 500;
 }
 .main a {
-  color: var(--link);
-  border-bottom: 1px dotted var(--black);
+  color: var(--gold2);
+  border-bottom: 1px dotted var(--gold2);
+}
+.main a:hover,
+.main a:focus {
+  color: var(--gold);
 }
 
 /* FONT ITEMS */
 h1 {
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--gold);
+  color: var(--gold2);
 }
 h2, h3 {
   font-size: 1rem;
+  font-weight: 400;
   color: var(--gold);
 }
 a {
   color: var(--white);
   text-decoration: none;
-  transition: ease-in-out 0.4s all;
+  transition: ease-in-out 0.25s all;
 }
 a:hover,
 a:focus {
@@ -161,7 +152,7 @@ a:focus {
   border-bottom: none;
 }
 
-/********* CONTAINER QUERIES ***********/
+/********* MEDIA QUERIES ***********/
 @media screen and (min-width: 512px) {
   ul {
     padding: 0 1rem;
@@ -206,7 +197,9 @@ a:focus {
     padding-right: 0;
   }
 }
+/********* END MEDIA QUERIES ***********/
 
+/* MAIN SECTION ITEMS */
 section h1,
 section h2,
 section h3,
@@ -223,7 +216,7 @@ section p {
   padding-bottom: 2.25rem;
 }
 
-/* FOOTER */
+/* FOOTER ITEMS */
 footer {
   font-size: 0.875rem;
   font-weight: 400;
@@ -234,11 +227,11 @@ footer {
   color: var(--cream);
 }
 footer a {
-  border-bottom: 1px dotted var(--white);
+  color: var(--gold2);
 }
 footer a:hover,
 footer a:focus {
-  border-bottom: none;
+  color: var(--gold);
 }
 
 /* MATERIAL-SYMBOLS-OUTLINED - GOOGLE FONTS & ICONS/SYMBOLS:
