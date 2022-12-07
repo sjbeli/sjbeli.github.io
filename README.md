@@ -1,7 +1,6 @@
 
 ## Project Repo
 
----
 
 1.  **ACE Computer** current site: [https://acecomputernh.com](https://acecomputernh.com/ "Current ACE Computer website")
 
@@ -11,6 +10,8 @@
 
 
 2. Coming Soon...
+
+---
 
 emojis:
 
