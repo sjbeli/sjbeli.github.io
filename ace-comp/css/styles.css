@@ -1,20 +1,21 @@
-/* Last updated 22/12/07 18:50 sjbeli */
+/* Last updated 22/12/08 09:50 sjbeli */
 /* RESET ITEMS */
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0; padding: 0;
 }
-/* COLORS */
-/* From: https://www.canva.com/colors/color-palettes/emerald-entrance/ */
+/* COLORS From: https://www.canva.com/colors/color-palettes/emerald-entrance/ */
 :root {
   --black: black;
   --black2: #122620;
   --black3: #555;
+  --light-gray: #999;
   --gold: #B68D40;
   --gold2: #D6AD60;
   --cream: #F4EBD0;
   --white: white;
-  --back-opacity: 0.8;
+  --opacity: 0.9;
+  --opacity2: 0.8
 }
 html {
   scroll-behavior: smooth;
@@ -46,7 +47,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-image: url('../img/manch-downtown-med.jpg');
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 .overlay {
   display: flex;
@@ -62,6 +63,7 @@ body {
 }
 #logo {
   padding: 1rem 0;
+  width: 140px;
 }
 img {
   max-width: 100%;
@@ -75,7 +77,7 @@ img {
   padding: 1rem 0.5rem 1.25rem;
   text-align: center;
   background-color: var(--black);
-  filter: opacity(var(--back-opacity));
+  filter: opacity(var(--opacity2));
 }
 .phone {
   padding-bottom: 0;
@@ -92,7 +94,7 @@ nav {
   width: 100%;
   background-color: var(--black);
   text-transform: uppercase;
-  filter: opacity(var(--back-opacity));
+  filter: opacity(var(--opacity));
   position: sticky;
   top: 0;
   z-index: 5;
@@ -101,35 +103,32 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-li {
   list-style-type: none;
 }
 li a {
   display: block;
   padding: 1rem;
 }
+.about-list {
+  display: block;
+  list-style-type: disc;
+  line-height: 1.6;
+  margin: -1rem 0 2.25rem;
+  padding-left: 2rem;
+  color: var(--black3)
+}
+.about-list li a {
+    display: inline-block;
+    padding: 0;
+  }
 
-/* ADJUST HOME ICON ORIENTATION (fn google) */
+/* ADJUST NAV HOME ICON ORIENTATION (fn google) */
 li:first-child {
   margin-bottom: -5px;
 }
-
-/* SECTION & MAIN ITEMS */
-section.main {
-  padding: 2rem 1rem 1rem;
-}
-.main h2 {
-  color: var(--black2);
-  font-weight: 500;
-}
-.main a {
-  color: var(--gold2);
-  border-bottom: 1px dotted var(--gold2);
-}
-.main a:hover,
-.main a:focus {
-  color: var(--gold);
+/* NOW NEED TO ADJUST ABOUT-LIST FIRST CHILD BECAUSE ABOVE (yes, f-google!) */
+.about-list li:first-child {
+  margin-bottom: 0;
 }
 
 /* FONT ITEMS */
@@ -168,7 +167,7 @@ a:focus {
   li:first-child {
     padding-right: 1.5rem;
   }
-   li:last-child {
+  li:last-child {
     padding-right: 0;
   }
   li a {
@@ -201,7 +200,15 @@ a:focus {
 }
 /********* END MEDIA QUERIES ***********/
 
+
 /* MAIN SECTION ITEMS */
+.main {
+  padding: 2rem 1rem 0;
+}
+.main h2 {
+  color: var(--black2);
+  font-weight: 500;
+}
 section h1,
 section h2,
 section h3,
@@ -217,6 +224,34 @@ section p {
 .last {
   padding-bottom: 2.25rem;
 }
+.bottom-section {
+  padding: 2rem 0;
+}
+.bottom-section h2 {
+  border-bottom: 1px solid var(--light-gray);
+  width: fit-content;
+  margin-bottom: 0.5rem;
+  padding: 0.125rem 0;
+}
+.main a {
+  color: var(--gold2);
+  border-bottom: 1px dotted var(--gold2);
+}
+.main a:hover,
+.main a:focus {
+  color: var(--gold);
+  border-bottom: 1px dotted transparent;
+}
+
+/* not using right now
+hr {
+  height: 1px;
+  border: none;
+  background-color: var(--light-gray);
+}
+.need-space {
+  margin-bottom: 2rem;
+} */
 
 /* GOOGLE MAP */
 iframe {
