@@ -1,10 +1,11 @@
-/* Last updated 22/12/08 15:35 sjbeli */
+/* Last updated 22/12/08 17:40 sjbeli */
 /* RESET ITEMS */
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0; padding: 0;
 }
 /* COLORS From: https://www.canva.com/colors/color-palettes/emerald-entrance/ */
+/* And a few other redundant settings */
 :root {
   --black: black;
   --black2: #122620;
@@ -16,6 +17,9 @@
   --white: white;
   --opacity: 0.90;
   --opacity2: 0.85;
+  --min-width: 290px;
+  --max-width1: 800px;
+  --max-width2: 1920px;
 }
 html {
   scroll-behavior: smooth;
@@ -25,18 +29,21 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-width: 290px;
-  max-width: 1400px;
   margin: 0 auto;
   background-color: var(--white);
   color: var(--gold);
   font-family: 'Quicksand', sans-serif;
 }
 
+body,
+#site-header,
+nav {
+  min-width: var(--min-width);
+  max-width: var(--max-width2);
+}
+
 /* NAVIGATION ITEMS */
 nav {
-  max-width: 1400px;
-  min-width: 290px;
   font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -82,8 +89,8 @@ li:first-child {
   height: 75vh;
   min-height: 555px;
   max-height: 600px;
-  max-width: 1400px;
-  min-width: 290px;
+  /* min-width: var(--min-width);
+  max-width: var(--max-width2); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -250,12 +257,22 @@ section p {
     padding-bottom: 0;
   }
 }
+@media screen and (min-width: 800px) {
+  .main {
+    max-width: var(--max-width1);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 900px) {
   nav {
     font-size: 1rem;
   }
   li:first-child {
     padding-right: 0;
+  }
+  ul {
+    justify-content: space-evenly;
   }
 }
 /********* END MEDIA QUERIES ***********/
