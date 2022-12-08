@@ -14,14 +14,14 @@
   --gold2: #D6AD60;
   --cream: #F4EBD0;
   --white: white;
-  --opacity: 0.9;
-  --opacity2: 0.8
+  --opacity: 0.90;
+  --opacity2: 0.75;
 }
 html {
   scroll-behavior: smooth;
 }
 
-/* BODY & HEADER ITEMS */
+/* BODY */
 body {
   display: flex;
   flex-direction: column;
@@ -32,72 +32,19 @@ body {
   color: var(--gold);
   font-family: 'Quicksand', sans-serif;
 }
-#site-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  height: 55vh;
-  min-height: 565px;
-  max-height: 600px;
-  width: 100vw;
-  max-width: 1400px;
-  min-width: 290px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-image: url('../img/manch-downtown-med.jpg');
-  background-attachment: fixed;
-}
-.overlay {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: column;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(100,100,100,0.33);
-}
-#logo {
-  padding: 1rem 0;
-  width: 140px;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.header-text {
-  width: 100%;
-  margin: 0;
-  padding: 1rem 0.5rem 1.25rem;
-  text-align: center;
-  background-color: var(--black);
-  filter: opacity(var(--opacity2));
-}
-.phone {
-  padding-bottom: 0;
-}
-.phone a:hover,
-.phone a:focus {
-  color: var(--gold);
-}
 
 /* NAVIGATION ITEMS */
 nav {
+  max-width: 1400px;
+  min-width: 290px;
   font-size: 0.75rem;
   font-weight: 500;
+  text-transform: uppercase;
   width: 100%;
   background-color: var(--black);
-  text-transform: uppercase;
   filter: opacity(var(--opacity));
-  position: sticky;
-  top: 0;
-  z-index: 5;
+  position: fixed;
+  z-index: 2;
 }
 ul {
   display: flex;
@@ -118,10 +65,9 @@ li a {
   color: var(--black3)
 }
 .about-list li a {
-    display: inline-block;
-    padding: 0;
+  display: inline-block;
+  padding: 0;
   }
-
 /* ADJUST NAV HOME ICON ORIENTATION (fn google) */
 li:first-child {
   margin-bottom: -5px;
@@ -129,6 +75,52 @@ li:first-child {
 /* NOW NEED TO ADJUST ABOUT-LIST FIRST CHILD BECAUSE ABOVE (yes, f-google!) */
 .about-list li:first-child {
   margin-bottom: 0;
+}
+
+/* HERO CONTAINER ITEMS */
+.hero-container {
+  height: 75vh;
+  min-height: 555px;
+  max-height: 600px;
+  max-width: 1400px;
+  min-width: 290px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-image: url('../img/manch-downtown-above.jpg');
+}
+.overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+#logo {
+  padding: 2rem 0 0.25rem;
+  width: 120px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.header-text {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0.5rem 1.25rem;
+  text-align: center;
+  background-color: var(--black);
+  filter: opacity(var(--opacity2));
+}
+.phone {
+  padding-bottom: 0;
+}
+.phone a:hover,
+.phone a:focus {
+  color: var(--gold);
 }
 
 /* FONT ITEMS */
@@ -153,54 +145,6 @@ a:focus {
   border-bottom: none;
 }
 
-/********* MEDIA QUERIES ***********/
-@media screen and (min-width: 512px) {
-  ul {
-    padding: 0 1rem;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-  li {
-    padding-right: 1rem;
-  }
-  li:first-child {
-    padding-right: 1.5rem;
-  }
-  li:last-child {
-    padding-right: 0;
-  }
-  li a {
-    padding: 1rem 0;
-  }
-  li a:hover,
-  li a:focus {
-    background-color: transparent;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  h2, h3 {
-    font-size: 1.25rem;
-  }
-}
-@media screen and (min-width: 655px) {
-  nav {
-    font-size: 0.875rem;
-    padding-bottom: 0;
-  }
-}
-@media screen and (min-width: 900px) {
-  nav {
-    font-size: 1rem;
-  }
-  li:first-child {
-    padding-right: 0;
-  }
-}
-/********* END MEDIA QUERIES ***********/
-
-
 /* MAIN SECTION ITEMS */
 .main {
   padding: 2rem 1rem 0;
@@ -213,7 +157,7 @@ section h1,
 section h2,
 section h3,
 section p {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 section p {
   font-size: 1rem;
@@ -242,6 +186,59 @@ section p {
   color: var(--gold);
   border-bottom: 1px dotted transparent;
 }
+
+/********* MEDIA QUERIES ***********/
+@media screen and (min-width: 512px) {
+  ul {
+    padding: 0 1rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  li {
+    padding-right: 1rem;
+  }
+  li:first-child {
+    padding-right: 1.5rem;
+  }
+  li:last-child {
+    padding-right: 0;
+  }
+  li a {
+    padding: 1rem 0;
+  }
+  li a:hover,
+  li a:focus {
+    background-color: transparent;
+  }
+  #logo {
+    width: auto;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .main h1 {
+    font-size: 1.75rem;
+}
+  h2, h3 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 655px) {
+  nav {
+    font-size: 0.875rem;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  nav {
+    font-size: 1rem;
+  }
+  li:first-child {
+    padding-right: 0;
+  }
+}
+/********* END MEDIA QUERIES ***********/
 
 /* not using right now
 hr {
