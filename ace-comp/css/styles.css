@@ -1,4 +1,4 @@
-/* Last updated 22/12/08 09:50 sjbeli */
+/* Last updated 22/12/08 14:55 sjbeli */
 /* RESET ITEMS */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -60,9 +60,9 @@ li a {
   display: block;
   list-style-type: disc;
   line-height: 1.6;
-  margin: -1rem 0 2.25rem;
+  margin: 0 0 2.25rem;
   padding-left: 2rem;
-  color: var(--black3)
+  color: var(--black3);
 }
 .about-list li a {
   display: inline-block;
@@ -146,36 +146,37 @@ a:focus {
 }
 
 /* MAIN SECTION ITEMS */
-.main {
-  padding: 2rem 1rem 0;
-}
-.main h2 {
-  color: var(--black2);
-  font-weight: 500;
-}
 section h1,
 section h2,
 section h3,
 section p {
   padding-bottom: 0.5rem;
 }
-section p {
+.main p {
   font-size: 1rem;
-  color: var(--black3);
-  line-height: 1.6;
   font-weight: 400;
+  line-height: 1.6;
+  padding-top: 0.5rem;
+  color: var(--black3);
 }
 .last {
   padding-bottom: 2.25rem;
 }
-.bottom-section {
-  padding: 2rem 0;
+.main-bottom {
+  padding: 1rem 0;
 }
-.bottom-section h2 {
+.main-bottom h2 {
   border-bottom: 1px solid var(--light-gray);
   width: fit-content;
   margin-bottom: 0.5rem;
   padding: 0.125rem 0;
+}
+.main {
+  padding: 2rem 1rem 0;
+}
+.main h2 {
+  color: var(--black2);
+  font-weight: 500;
 }
 .main a {
   color: var(--gold2);
@@ -186,9 +187,26 @@ section p {
   color: var(--gold);
   border-bottom: 1px dotted transparent;
 }
+/* ANCHOR FIX */
+#contact {
+    margin-top: -8rem;
+    padding-top: 8em;
+  }
 
 /********* MEDIA QUERIES ***********/
+@media screen and (min-width: 343px) {
+  /* ANCHOR FIX */
+  #contact {
+    margin-top: -5rem;
+    padding-top: 5rem;
+  }
+}
 @media screen and (min-width: 512px) {
+  /* ANCHOR FIX */
+  #contact {
+    margin-top: -2.75rem;
+    padding-top: 2.75rem;
+  }
   ul {
     padding: 0 1rem;
     justify-content: space-around;
@@ -240,16 +258,6 @@ section p {
 }
 /********* END MEDIA QUERIES ***********/
 
-/* not using right now
-hr {
-  height: 1px;
-  border: none;
-  background-color: var(--light-gray);
-}
-.need-space {
-  margin-bottom: 2rem;
-} */
-
 /* GOOGLE MAP */
 iframe {
   margin: 1rem 0;
@@ -275,6 +283,7 @@ footer a:hover,
 footer a:focus {
   color: var(--gold2);
 }
+
 
 /* MATERIAL-SYMBOLS-OUTLINED - GOOGLE FONTS & ICONS/SYMBOLS:
 https://fonts.google.com/icons?icon.set=Material+Symbols */
