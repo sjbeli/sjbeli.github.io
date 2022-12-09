@@ -1,4 +1,4 @@
-/* Last updated 22/12/08 17:40 sjbeli */
+/* © sjbeli */
 /* RESET ITEMS */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -18,8 +18,8 @@
   --opacity: 0.90;
   --opacity2: 0.85;
   --min-width: 290px;
-  --max-width1: 800px;
-  --max-width2: 1920px;
+  --max-width: 1920px;
+  --max-width2: 800px; /* .main section only (readability) */
 }
 html {
   scroll-behavior: smooth;
@@ -34,12 +34,10 @@ body {
   color: var(--gold);
   font-family: 'Quicksand', sans-serif;
 }
-
 body,
-#site-header,
 nav {
   min-width: var(--min-width);
-  max-width: var(--max-width2);
+  max-width: var(--max-width);
 }
 
 /* NAVIGATION ITEMS */
@@ -75,11 +73,11 @@ li a {
   display: inline-block;
   padding: 0;
   }
-/* ADJUST NAV HOME ICON VERTICAL ORIENTATION (fn google!) */
+/* ADJUST HOME ICON (nav) VERTICAL ORIENTATION (fn google!) */
 li:first-child {
   margin-bottom: -5px;
 }
-/* NOW NEED TO RE-ADJUST ABOUT-LIST FIRST CHILD BECAUSE ABOVE (yea, f-google) */
+/* NOW NEED TO RE-ADJUST ABOUT-LIST :first-child BECAUSE ABOVE (f-google) */
 .about-list li:first-child {
   margin-bottom: 0;
 }
@@ -89,13 +87,11 @@ li:first-child {
   height: 75vh;
   min-height: 555px;
   max-height: 600px;
-  /* min-width: var(--min-width);
-  max-width: var(--max-width2); */
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: bottom;
   background-image: url('../img/manch-downtown-above.jpg');
-  /* background-attachment: fixed; */
+  background-attachment: scroll;
 }
 .overlay {
   position: relative;
@@ -168,8 +164,9 @@ section p {
   padding-top: 0.5rem;
   color: var(--black3);
 }
-.last {
-  padding-bottom: 2.25rem;
+.main h2 {
+  color: var(--black2);
+  font-weight: 500;
 }
 .main-bottom {
   padding: 1rem 0;
@@ -183,10 +180,6 @@ section p {
 .main {
   padding: 2rem 1rem 0;
 }
-.main h2 {
-  color: var(--black2);
-  font-weight: 500;
-}
 .main a {
   color: var(--gold2);
   border-bottom: 1px dotted var(--gold2);
@@ -196,11 +189,23 @@ section p {
   color: var(--gold);
   border-bottom: 1px dotted transparent;
 }
+.last {
+  padding-bottom: 2.25rem;
+}
+
 /* ANCHOR FIX 1 of 3 */
 #contact {
     margin-top: -8rem;
     padding-top: 8em;
   }
+
+  /* GOOGLE MAP */
+iframe {
+  margin: 1rem 0;
+  border: 1px solid var(--light-gray);
+  width: 100%;
+  height: 300px;
+}
 
 /********* BEGIN MEDIA QUERIES ***********/
 @media screen and (min-width: 343px) {
@@ -259,7 +264,7 @@ section p {
 }
 @media screen and (min-width: 800px) {
   .main {
-    max-width: var(--max-width1);
+    max-width: var(--max-width2);
     margin-left: auto;
     margin-right: auto;
   }
@@ -274,16 +279,14 @@ section p {
   ul {
     justify-content: space-evenly;
   }
+  .hero-container {
+    background-attachment: fixed;
+  }
+  iframe {
+    height: 500px;
+  }
 }
 /********* END MEDIA QUERIES ***********/
-
-/* GOOGLE MAP */
-iframe {
-  margin: 1rem 0;
-  border: none;
-  width: 100%;
-  height: 400px;
-}
 
 /* FOOTER ITEMS */
 footer {
