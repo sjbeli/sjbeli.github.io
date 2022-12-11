@@ -193,11 +193,16 @@ section p {
   padding-bottom: 2.25rem;
 }
 
-/* ANCHOR FIX 1 of 3 */
+/* CONTACT ANCHOR FIX 1 of 3 */
 #contact {
     margin-top: -8rem;
     padding-top: 8em;
   }
+/* REPAIR ANCHOR FIX 1 of 3 */
+#repair {
+  margin-top: -10.325rem;
+  padding-top: 10.325rem;
+}
 
   /* GOOGLE MAP */
 iframe {
@@ -214,12 +219,22 @@ iframe {
     margin-top: -5rem;
     padding-top: 5rem;
   }
+  /* REPAIR ANCHOR FIX 2 of 3 */
+  #repair {
+    margin-top: -7.325rem;
+    padding-top: 7.325rem;
+  }
 }
 @media screen and (min-width: 512px) {
   /* ANCHOR FIX 3 of 3 */
   #contact {
     margin-top: -2.75rem;
     padding-top: 2.75rem;
+  }
+  /* REPAIR ANCHOR FIX 2 of 3 */
+  #repair {
+    margin-top: -5.075rem;
+    padding-top: 5.075rem;
   }
   ul {
     padding: 0 1rem;
