@@ -157,6 +157,9 @@ section h3,
 section p {
   padding-bottom: 0.5rem;
 }
+.main {
+  padding: 2rem 1rem 0;
+}
 .main p {
   font-size: 1rem;
   font-weight: 400;
@@ -164,21 +167,19 @@ section p {
   padding-top: 0.5rem;
   color: var(--black3);
 }
-.main h2 {
+.main h2,
+.main h3 {
   color: var(--black2);
   font-weight: 500;
+  line-height: 1.5;
 }
-.main-bottom {
-  padding: 1rem 0;
-}
-.main-bottom h2 {
+.main h3 {
+  margin-top: 0.5rem;
   border-bottom: 1px solid var(--light-gray);
   width: fit-content;
   margin-bottom: 0.5rem;
   padding: 0.125rem 0;
-}
-.main {
-  padding: 2rem 1rem 0;
+
 }
 .main a {
   color: var(--gold2);
@@ -193,13 +194,24 @@ section p {
   padding-bottom: 2.25rem;
 }
 
+.main-bottom {
+  padding: 1rem 0;
+}
+.main-bottom h2 {
+  border-bottom: 1px solid var(--light-gray);
+  width: fit-content;
+  margin-bottom: 0.5rem;
+  padding: 0.125rem 0;
+}
+
+/* PAGE ANCHOR FIXES */
 /* CONTACT ANCHOR FIX 1 of 3 */
 #contact {
-    margin-top: -8rem;
-    padding-top: 8em;
-  }
-/* REPAIR ANCHOR FIX 1 of 3 */
-#repair {
+  margin-top: -8rem;
+  padding-top: 8em;
+}
+/* REPAIR, SPYWARE, DATA, NETWORKS ANCHOR FIX 1 of 3 */
+#repair, #spyware, #data, #networks {
   margin-top: -10.325rem;
   padding-top: 10.325rem;
 }
@@ -214,25 +226,25 @@ iframe {
 
 /********* BEGIN MEDIA QUERIES ***********/
 @media screen and (min-width: 343px) {
-  /* ANCHOR FIX 2 of 3 */
+  /* CONTACT ANCHOR FIX 2 of 3 */
   #contact {
     margin-top: -5rem;
     padding-top: 5rem;
   }
-  /* REPAIR ANCHOR FIX 2 of 3 */
-  #repair {
+  /* REPAIR, SPYWARE, DATA, NETWORKS ANCHOR FIX 2 of 3 */
+#repair, #spyware, #data, #networks {
     margin-top: -7.325rem;
     padding-top: 7.325rem;
   }
 }
 @media screen and (min-width: 512px) {
-  /* ANCHOR FIX 3 of 3 */
+  /* CONTACT ANCHOR FIX 3 of 3 */
   #contact {
     margin-top: -2.75rem;
     padding-top: 2.75rem;
   }
-  /* REPAIR ANCHOR FIX 2 of 3 */
-  #repair {
+  /* REPAIR, SPYWARE, DATA, NETWORKS ANCHOR FIX 3 of 3 */
+#repair, #spyware, #data, #networks {
     margin-top: -5.075rem;
     padding-top: 5.075rem;
   }
@@ -264,11 +276,15 @@ iframe {
   h1 {
     font-size: 2rem;
   }
+  h2, h3 {
+    font-size: 1.325rem;
+  }
   .main h1 {
     font-size: 1.75rem;
-}
-  h2, h3 {
-    font-size: 1.25rem;
+  }
+  .main h3 {
+    font-size: 1.125rem;
+    color: var(--black3);
   }
 }
 @media screen and (min-width: 655px) {
