@@ -232,7 +232,7 @@ iframe {
     padding-top: 5rem;
   }
   /* REPAIR, SPYWARE, DATA, NETWORKS ANCHOR FIX 2 of 3 */
-#repair, #spyware, #data, #networks {
+  #repair, #spyware, #data, #networks {
     margin-top: -7.325rem;
     padding-top: 7.325rem;
   }
