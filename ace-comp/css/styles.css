@@ -413,9 +413,9 @@ footer {
   .top-nav {
     justify-content: space-evenly;
   }
-  .hero-container {
+  /* .hero-container {
     background-attachment: fixed;
-  }
+  } */
   iframe {
     height: 500px;
   }
