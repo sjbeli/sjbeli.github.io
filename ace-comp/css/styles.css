@@ -77,11 +77,11 @@ li a {
 .about-list li a:first-child {
   display: inline;
 }
-/* ADJUST HOME ICON (nav) VERTICAL ORIENTATION (fn google!) */
+/* ADJUST HOME ICON (nav) VERTICAL ORIENTATION (google!) */
 li:first-child {
   margin-bottom: -5px;
 }
-/* NOW NEED TO RE-ADJUST ABOUT-LIST :first-child BECAUSE ABOVE (f-google) */
+/* NOW NEED TO RE-ADJUST ABOUT-LIST :first-child BECAUSE ABOVE (google) */
 .about-list li:first-child {
   margin-bottom: 0;
 }
