@@ -55,7 +55,8 @@ nav {
 ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+}
+.top-nav {
   list-style-type: none;
 }
 li a {
@@ -64,8 +65,7 @@ li a {
 }
 .about-list {
   display: block;
-  list-style-type: disc;
-  line-height: 1.5;
+  line-height: 1.55;
   margin: 0 0 2.25rem;
   padding-left: 2rem;
   color: var(--black3);
@@ -74,6 +74,9 @@ li a {
   display: inline-block;
   padding: 0;
   }
+.about-list li a:first-child {
+  display: inline;
+}
 /* ADJUST HOME ICON (nav) VERTICAL ORIENTATION (fn google!) */
 li:first-child {
   margin-bottom: -5px;
@@ -164,7 +167,7 @@ a:focus {
   border-bottom: none;
 }
 .gold-highlight {
-  color: var(--gold);
+  color: var(--gold2);
 }
 
 /* MAIN SECTION ITEMS */
