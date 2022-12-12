@@ -10,13 +10,14 @@
   --black: black;
   --black2: #122620;
   --black3: #555;
-  --light-gray: #999;
+  --light-gray: #bbb;
   --gold: #B68D40;
   --gold2: #D6AD60;
   --cream: #F4EBD0;
   --white: white;
   --opacity: 0.90;
   --opacity2: 0.85;
+  --transition: 0.3s;
   --min-width: 290px;
   --max-width: 1920px;
   --max-width2: 800px; /* .main section only (readability) */
@@ -118,6 +119,7 @@ img {
   padding: 1rem 0.5rem 1.25rem;
   text-align: center;
   background-color: var(--black);
+  color: var(--gold2);
   filter: opacity(var(--opacity2));
 }
 .phone {
@@ -130,19 +132,28 @@ img {
 
 /* FONT ITEMS */
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 400;
-  color: var(--gold2);
+  padding-bottom: 0.5rem;
 }
 h2, h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.site-title {
+  font-size: 1.75rem;
+}
+.site-description {
   font-size: 1rem;
-  font-weight: 400;
-  color: var(--gold2);
 }
 a {
   color: var(--white);
   text-decoration: none;
-  transition: ease-in-out 0.25s all;
+  transition: var(--transition) ease-in-out all;
+  -webkit-transition: var(--transition);
+   -moz-transition: var(--transition);
+   -ms-transition: var(--transition);
+   -o-transition: var(--transition);
 }
 a:hover,
 a:focus {
@@ -151,7 +162,6 @@ a:focus {
 }
 
 /* MAIN SECTION ITEMS */
-section h1,
 section h2,
 section h3,
 section p {
@@ -167,18 +177,25 @@ section p {
   padding-top: 0.5rem;
   color: var(--black3);
 }
+.main h1 {
+  padding-bottom: 1.75rem;
+  color: var(--gold2);
+}
+.main h2 {
+  color: var(--black2);
+}
 .main h2,
 .main h3 {
-  color: var(--black2);
-  font-weight: 500;
   line-height: 1.5;
 }
 .main h3 {
   margin-top: 0.5rem;
-  border-bottom: 1px solid var(--light-gray);
+  font-size: 1.125rem;
   width: fit-content;
+  border-bottom: 1px solid var(--light-gray);
   margin-bottom: 0.5rem;
   padding: 0.125rem 0;
+  color: var(--black3);
 
 }
 .main a {
@@ -194,6 +211,7 @@ section p {
   padding-bottom: 2.25rem;
 }
 
+/* INFO FOR CONTACT - PAYMENTS - LOCATION INFO */
 .main-bottom {
   padding: 1rem 0;
 }
@@ -215,8 +233,25 @@ section p {
   margin-top: -10.325rem;
   padding-top: 10.325rem;
 }
+.g-icon {
+  display: flex;
+  align-items: center;
+}
 
-  /* GOOGLE MAP */
+/* MATERIAL-SYMBOLS-OUTLINED - GOOGLE FONTS & ICONS/SYMBOLS:
+https://fonts.google.com/icons?icon.set=Material+Symbols */
+.material-symbols-outlined {
+  font-size: 1.5rem;
+  line-height: 0;
+  margin-top: 0.5rem;
+}
+.main .material-symbols-outlined {
+  margin-top: 0;
+  margin-right: 0.5rem;
+  color: var(--gold2);
+}
+
+  /* GOOGLE MAPS FIX */
 iframe {
   margin: 1rem 0;
   border: 1px solid var(--light-gray);
@@ -237,7 +272,7 @@ iframe {
     padding-top: 7.325rem;
   }
 }
-@media screen and (min-width: 512px) {
+@media screen and (min-width: 515px) {
   /* CONTACT ANCHOR FIX 3 of 3 */
   #contact {
     margin-top: -2.75rem;
@@ -276,21 +311,29 @@ iframe {
   h1 {
     font-size: 2rem;
   }
-  h2, h3 {
-    font-size: 1.325rem;
+  h2 {
+    font-size: 1.5rem;
+  }
+  .site-title {
+    font-size: 2rem;
+  }
+  .site-description {
+    font-size: 1.25rem;
   }
   .main h1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
   .main h3 {
-    font-size: 1.125rem;
-    color: var(--black3);
+    font-size: 1.25rem;
   }
 }
-@media screen and (min-width: 655px) {
+@media screen and (min-width: 660px) {
   nav {
     font-size: 0.875rem;
     padding-bottom: 0;
+  }
+  .material-symbols-outlined {
+    margin-right: -0.5rem;
   }
 }
 @media screen and (min-width: 800px) {
@@ -336,12 +379,4 @@ footer a:hover,
 footer a:focus {
   color: var(--gold2);
 }
-
-/* MATERIAL-SYMBOLS-OUTLINED - GOOGLE FONTS & ICONS/SYMBOLS:
-https://fonts.google.com/icons?icon.set=Material+Symbols */
-
-.material-symbols-outlined {
-  font-size: 1.5rem;
-  line-height: 0;
-  margin-top: 0.5rem;
-}
+/* END */
