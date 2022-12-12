@@ -232,8 +232,8 @@ section p {
 /* PAGE ANCHOR FIXES */
 /* CONTACT ANCHOR FIX 1 of 3 */
 #contact {
-  margin-top: -8rem;
-  padding-top: 8em;
+  margin-top: -9rem;
+  padding-top: 9rem;
 }
 /* REPAIR, SPYWARE, DATA, NETWORKS ANCHOR FIX 1 of 3 */
 #repair, #spyware, #data, #networks {
@@ -270,8 +270,8 @@ iframe {
 @media screen and (min-width: 343px) {
   /* CONTACT ANCHOR FIX 2 of 3 */
   #contact {
-    margin-top: -5rem;
-    padding-top: 5rem;
+    margin-top: -6rem;
+    padding-top: 6rem;
   }
   /* REPAIR, SPYWARE, DATA, NETWORKS ANCHOR FIX 2 of 3 */
   #repair, #spyware, #data, #networks {
@@ -282,8 +282,8 @@ iframe {
 @media screen and (min-width: 515px) {
   /* CONTACT ANCHOR FIX 3 of 3 */
   #contact {
-    margin-top: -2.75rem;
-    padding-top: 2.75rem;
+    margin-top: -3.75rem;
+    padding-top: 3.75rem;
   }
   /* REPAIR, SPYWARE, DATA, NETWORKS ANCHOR FIX 3 of 3 */
 #repair, #spyware, #data, #networks {
