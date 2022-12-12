@@ -20,7 +20,7 @@
   --transition: 0.3s;
   --min-width: 290px;
   --max-width: 1920px;
-  --max-width2: 800px; /* .main section only (readability) */
+  --max-width2: 800px; /* .main section only (max-readability) */
 }
 html {
   scroll-behavior: smooth;
@@ -140,6 +140,9 @@ h2, h3 {
   font-size: 1.25rem;
   font-weight: 500;
 }
+.initial-char-limit-25 {
+  max-width: 25ch;
+}
 .site-title {
   font-size: 1.75rem;
 }
@@ -171,7 +174,7 @@ section p {
   padding-bottom: 0.5rem;
 }
 .main {
-  padding: 2rem 1rem 0;
+  padding: 2rem 1rem 1rem;
 }
 .main p {
   font-size: 1rem;
@@ -216,14 +219,15 @@ section p {
 
 /* INFO FOR CONTACT - PAYMENTS - LOCATION INFO */
 .main-bottom {
-  padding: 1rem 0;
+  padding: rem 0;
 }
-.main-bottom h2 {
+/* NOT CURRENTLY IN USE */
+/* .main-bottom h2 {
   border-bottom: 1px solid var(--light-gray);
   width: fit-content;
   margin-bottom: 0.5rem;
   padding: 0.125rem 0;
-}
+} */
 
 /* PAGE ANCHOR FIXES */
 /* CONTACT ANCHOR FIX 1 of 3 */
@@ -326,6 +330,10 @@ iframe {
   .main h1 {
     font-size: 2rem;
   }
+  .main h1,
+  .main h2 {
+    max-width: fit-content;
+  }
   .main h3 {
     font-size: 1.25rem;
   }
@@ -334,6 +342,9 @@ iframe {
   nav {
     font-size: 0.875rem;
     padding-bottom: 0;
+  }
+  .main h1 {
+    max-width: fit-content;
   }
   .material-symbols-outlined {
     margin-right: -0.5rem;
