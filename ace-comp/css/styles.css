@@ -12,11 +12,13 @@
   --black3: #555;
   --light-gray: #ccc;
   --gold: #B68D40;
+  --gold: #ccc;
   --gold2: #D6AD60;
+  --gold2: #999;
   --cream: #F4EBD0;
   --white: white;
-  --opacity: 0.90;
-  --opacity2: 0.85;
+  --opacity: 0.97;
+  --opacity2: 0.95;
   --transition: 0.3s;
   --min-width: 290px;
   --max-width: 1920px;
@@ -51,6 +53,7 @@ nav {
   font-weight: 500;
   text-transform: uppercase;
   background-color: var(--black);
+  background-color: #3968B0;
   filter: opacity(var(--opacity));
 }
 ul {
@@ -90,7 +93,7 @@ li:first-child {
 
 /* HERO CONTAINER ITEMS */
 .hero-container {
-  height: 55vh;
+  height: 100vh;
   min-height: 555px;
   max-height: 600px;
   background-size: cover;
@@ -100,30 +103,29 @@ li:first-child {
   background-attachment: scroll;
 }
 .overlay {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
 }
 #logo {
-  padding: 2rem 0 0.25rem;
   width: 120px;
 }
 img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin-bottom: 0.5rem;
 }
 .header-text {
   width: 100%;
-  margin: 0;
   padding: 1rem 0.5rem 1.25rem;
   text-align: center;
   background-color: var(--black);
+  background-color: #3968B0;
   color: var(--gold2);
   filter: opacity(var(--opacity2));
 }
@@ -149,10 +151,12 @@ h2, h3 {
   max-width: 25ch;
 }
 .site-title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  color: var(--white);
 }
 .site-description {
   font-size: 1rem;
+  color: var(--white);
 }
 a {
   color: var(--white);
@@ -189,8 +193,9 @@ section p {
   color: var(--black3);
 }
 .main h1 {
-  padding-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
   color: var(--gold2);
+  color: var(--black3);
 }
 .main h2 {
   color: var(--black2);
@@ -279,10 +284,12 @@ footer {
   text-align: center;
   line-height: 1.8;
   background-color: var(--black);
+  background-color: #3968B0;
   color: var(--cream);
 }
 .footer-info a {
   color: var(--gold);
+  color: var(--light-gray);
 }
 .footer-info a:hover,
 .footer-info a:focus {
@@ -294,6 +301,9 @@ footer {
 
 /********* BEGIN MEDIA QUERIES ***********/
 @media screen and (min-width: 343px) {
+  .header-text {
+    margin: 1.5rem 0;
+  }
   /* CONTACT ANCHOR FIX 2 of 3 */
   #contact {
     margin-top: -6rem;
