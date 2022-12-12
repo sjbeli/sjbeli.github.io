@@ -85,13 +85,13 @@ li:first-child {
 
 /* HERO CONTAINER ITEMS */
 .hero-container {
-  height: 75vh;
+  height: 55vh;
   min-height: 555px;
   max-height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-image: url('../img/manch-downtown-above.jpg');
+  background-position: bottom left;
+  background-image: url('../img/manch-downtown.jpg');
   background-attachment: scroll;
 }
 .overlay {
@@ -102,7 +102,7 @@ li:first-child {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 #logo {
   padding: 2rem 0 0.25rem;
