@@ -10,7 +10,7 @@
   --black: black;
   --black2: #122620;
   --black3: #555;
-  --light-gray: #bbb;
+  --light-gray: #ccc;
   --gold: #B68D40;
   --gold2: #D6AD60;
   --cream: #F4EBD0;
@@ -159,6 +159,9 @@ a:hover,
 a:focus {
   color: var(--gold);
   border-bottom: none;
+}
+.gold-highlight {
+  color: var(--gold);
 }
 
 /* MAIN SECTION ITEMS */
