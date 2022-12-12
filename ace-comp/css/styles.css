@@ -58,6 +58,7 @@ ul {
 }
 .top-nav {
   list-style-type: none;
+  justify-content: center;
 }
 li a {
   display: block;
@@ -295,9 +296,11 @@ iframe {
   }
   ul {
     padding: 0 1rem;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
+  }
+  .top-nav {
+    justify-content: space-around;
   }
   li {
     padding-right: 1rem;
@@ -367,7 +370,7 @@ iframe {
   li:first-child {
     padding-right: 0;
   }
-  ul {
+  .top-nav {
     justify-content: space-evenly;
   }
   .hero-container {
