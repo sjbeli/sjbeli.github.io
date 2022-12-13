@@ -7,19 +7,27 @@
 /* COLORS From: https://www.canva.com/colors/color-palettes/emerald-entrance/ */
 /* And a few other redundant settings */
 :root {
+  --blue: #3968B0;
+  --blue2: #0c4daf;
+
   --black: black;
   --black2: #122620;
   --black3: #555;
   --light-gray: #ccc;
+
   --gold: #B68D40;
-  --gold: #ccc;
+  --gold: #bbb;
   --gold2: #D6AD60;
   --gold2: #999;
+
   --cream: #F4EBD0;
   --white: white;
+
   --opacity: 0.97;
   --opacity2: 0.95;
+
   --transition: 0.3s;
+
   --min-width: 290px;
   --max-width: 1920px;
   --max-width2: 800px; /* .main section only (max-readability) */
@@ -53,7 +61,7 @@ nav {
   font-weight: 500;
   text-transform: uppercase;
   background-color: var(--black);
-  background-color: #3968B0;
+  background-color: var(--blue);
   filter: opacity(var(--opacity));
 }
 ul {
@@ -109,7 +117,7 @@ li:first-child {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.1); */
+  background-color: rgba(57, 104, 176, 0.1);
 }
 #logo {
   width: 120px;
@@ -125,7 +133,7 @@ img {
   padding: 1rem 0.5rem 1.25rem;
   text-align: center;
   background-color: var(--black);
-  background-color: #3968B0;
+  background-color: var(--blue);
   color: var(--gold2);
   filter: opacity(var(--opacity2));
 }
@@ -172,8 +180,8 @@ a:focus {
   color: var(--gold);
   border-bottom: none;
 }
-.gold-highlight {
-  color: var(--gold2);
+.pricing {
+  color: var(--blue2);
 }
 
 /* MAIN SECTION ITEMS */
@@ -194,8 +202,7 @@ section p {
 }
 .main h1 {
   padding-bottom: 1.5rem;
-  color: var(--gold2);
-  color: var(--black3);
+  color: var(--black);
 }
 .main h2 {
   color: var(--black2);
@@ -284,7 +291,7 @@ footer {
   text-align: center;
   line-height: 1.8;
   background-color: var(--black);
-  background-color: #3968B0;
+  background-color: var(--blue);
   color: var(--cream);
 }
 .footer-info a {
@@ -293,7 +300,7 @@ footer {
 }
 .footer-info a:hover,
 .footer-info a:focus {
-  color: var(--gold2);
+  color: var(--gold);
 }
 .privacy-terms {
   margin-top: 1rem;
@@ -413,9 +420,9 @@ footer {
   .top-nav {
     justify-content: space-evenly;
   }
-  /* .hero-container {
+  .hero-container {
     background-attachment: fixed;
-  } */
+  }
   iframe {
     height: 500px;
   }

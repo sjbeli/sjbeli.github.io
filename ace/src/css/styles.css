@@ -1,0 +1,19 @@
+body {
+  background-color: cornflowerblue;
+  color: white;
+}
+h1 {
+  color: black;
+}
+h2 {
+  color: darkolivegreen;
+}
+h3 {
+  color: #555;
+}
+a {
+  color: yellowgreen;
+}
+a:hover {
+  color: aquamarine;
+}
