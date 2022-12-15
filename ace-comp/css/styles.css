@@ -218,7 +218,7 @@ section p {
 }
 .main h3::before {
   content:"\2695";
-  margin-right: 0.25rem;
+  margin-right: 0.125rem;
   color: var(--blue);
 }
 .main a {
@@ -294,7 +294,7 @@ footer {
   color: var(--white);
 }
 footer a {
-  color: var(--white2);
+  color: var(--light-gray);
 }
 footer a:hover,
 footer a:focus {
