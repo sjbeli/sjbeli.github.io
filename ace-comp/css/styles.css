@@ -215,10 +215,11 @@ section p {
   padding: 0;
   color: var(--black4);
 }
-.main h3::before {
+.main h3:before {
   content:"\2695";
-  margin-right: 0.125rem;
-  margin-bottom: inherit;
+  margin: 0;
+  padding: 0;
+  padding-right: 0.25rem;
   color: var(--blue);
 }
 .main a {
