@@ -152,10 +152,15 @@ h2, h3 {
   max-width: 25ch;
 }
 .site-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-family: 'Dorsa';
+  font-size: 2.75rem;
+  font-weight: 900;
+  letter-spacing: 0.075em;
   text-transform: uppercase;
   color: var(--white);
+}
+.smcaps {
+  font-size: 2.25rem;
 }
 .site-description {
   font-size: 1rem;
@@ -217,8 +222,6 @@ section p {
 }
 .main h3:before {
   content:"\2695";
-  margin: 0;
-  padding: 0;
   padding-right: 0.25rem;
   color: var(--blue);
 }
@@ -358,8 +361,11 @@ footer a {
     font-size: 1.5rem;
   }
   .site-title {
-    font-size: 2rem;
+    font-size: 4.5rem;
   }
+  .smcaps {
+  font-size: 3.625rem;
+}
   .site-description {
     font-size: 1.25rem;
   }
