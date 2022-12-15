@@ -14,12 +14,11 @@
   --black2: #122620;
   --black3: #555;
   --black4: #777;
+  --light-gray: #ccc;
 
   --white: white;
   --white2: #bbb;
   --white3: #999;
-
-  --light-gray: #ccc;
 
   --opacity: 0.98;
   --opacity2: 0.96;
@@ -219,6 +218,7 @@ section p {
 .main h3::before {
   content:"\2695";
   margin-right: 0.125rem;
+  margin-bottom: inherit;
   color: var(--blue);
 }
 .main a {
@@ -237,29 +237,6 @@ section p {
 /* INFO FOR CONTACT - PAYMENTS - LOCATION INFO */
 .main-bottom {
   padding: rem 0;
-}
-/* NOT CURRENTLY IN USE! */
-/* .main-bottom h2 {
-  border-bottom: 1px solid var(--light-gray);
-  width: fit-content;
-  margin-bottom: 0.5rem;
-  padding: 0.125rem 0;
-} */
-
-/* PAGE ANCHOR FIXES */
-/* CONTACT ANCHOR FIX 1 of 3 */
-#contact {
-  margin-top: -9rem;
-  padding-top: 9rem;
-}
-/* REPAIR, SPYWARE, DATA, NETWORKS ANCHOR FIX 1 of 3 */
-#repair, #spyware, #data, #networks {
-  margin-top: -10.325rem;
-  padding-top: 10.325rem;
-}
-.g-icon {
-  display: flex;
-  align-items: center;
 }
 
 /* MATERIAL-SYMBOLS-OUTLINED - GOOGLE FONTS & ICONS/SYMBOLS:
@@ -286,24 +263,36 @@ iframe {
 footer {
   font-size: 0.75rem;
   font-weight: 400;
-  padding: 1.5rem 0.5rem;
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.8;
-  background-color: var(--blue);
-  color: var(--white);
+  line-height: 1.7;
+  padding: 1.5rem 0.5rem;
+  background-color: var(--black3);
+  color: var(--white3);
 }
 footer a {
-  color: var(--light-gray);
-}
-footer a:hover,
-footer a:focus {
-  color: var(--white);
+  color: var(--white2);
 }
 .privacy-terms {
   margin-top: 1rem;
+  font-size: .625rem;
 }
 
+/* PAGE ANCHOR FIXES */
+/* CONTACT ANCHOR FIX 1 of 3 */
+#contact {
+  margin-top: -9rem;
+  padding-top: 9rem;
+}
+/* REPAIR, SPYWARE, DATA, NETWORKS ANCHOR FIX 1 of 3 */
+#repair, #spyware, #data, #networks {
+  margin-top: -10.325rem;
+  padding-top: 10.325rem;
+}
+.g-icon {
+  display: flex;
+  align-items: center;
+}
 /********* BEGIN MEDIA QUERIES ***********/
 @media screen and (min-width: 343px) {
   .header-text {
@@ -391,6 +380,9 @@ footer a:focus {
   .footer-info {
     font-size: 0.875rem;
   }
+  .privacy-terms {
+    font-size: 0.75rem;
+  }
 }
 @media screen and (min-width: 800px) {
   .main {
@@ -417,4 +409,4 @@ footer a:focus {
   }
 }
 /********* END MEDIA QUERIES ***********/
-/* END */
+/* END FILE */
