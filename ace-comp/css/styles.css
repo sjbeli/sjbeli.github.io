@@ -8,23 +8,21 @@
 /* And a few other redundant settings */
 :root {
   --blue: #3968B0;
-  --blue2: #0c4daf;
+  --blue2: #054ab2;
 
   --black: black;
   --black2: #122620;
   --black3: #555;
+  --black4: #777;
+
+  --white: white;
+  --white2: #bbb;
+  --white3: #999;
+
   --light-gray: #ccc;
 
-  --gold: #B68D40;
-  --gold: #bbb;
-  --gold2: #D6AD60;
-  --gold2: #999;
-
-  --cream: #F4EBD0;
-  --white: white;
-
-  --opacity: 0.97;
-  --opacity2: 0.95;
+  --opacity: 0.98;
+  --opacity2: 0.96;
 
   --transition: 0.3s;
 
@@ -42,7 +40,6 @@ body {
   flex-direction: column;
   margin: 0 auto;
   background-color: var(--white);
-  color: var(--gold);
   font-family: 'Quicksand', sans-serif;
 }
 body,
@@ -60,7 +57,6 @@ nav {
   font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
-  background-color: var(--black);
   background-color: var(--blue);
   filter: opacity(var(--opacity));
 }
@@ -106,9 +102,9 @@ li:first-child {
   max-height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom left;
-  background-image: url('../img/manch-downtown.jpg');
-  background-attachment: scroll;
+  background-position: center bottom;
+  background-image: url('../img/checkup.jpg');
+  background-attachment: fixed;
 }
 .overlay {
   display: flex;
@@ -132,9 +128,7 @@ img {
   width: 100%;
   padding: 1rem 0.5rem 1.25rem;
   text-align: center;
-  background-color: var(--black);
   background-color: var(--blue);
-  color: var(--gold2);
   filter: opacity(var(--opacity2));
 }
 .phone {
@@ -142,7 +136,7 @@ img {
 }
 .phone a:hover,
 .phone a:focus {
-  color: var(--gold);
+  color: var(--light-gray);
 }
 
 /* FONT ITEMS */
@@ -160,6 +154,8 @@ h2, h3 {
 }
 .site-title {
   font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
   color: var(--white);
 }
 .site-description {
@@ -177,11 +173,13 @@ a {
 }
 a:hover,
 a:focus {
-  color: var(--gold);
+  color: var(--light-gray);
   border-bottom: none;
 }
 .pricing {
-  color: var(--blue2);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--black3);
 }
 
 /* MAIN SECTION ITEMS */
@@ -212,22 +210,24 @@ section p {
   line-height: 1.5;
 }
 .main h3 {
+  width: fit-content;
   margin-top: 0.5rem;
   font-size: 1.125rem;
-  width: fit-content;
-  border-bottom: 1px solid var(--light-gray);
-  margin-bottom: 0.5rem;
-  padding: 0.125rem 0;
-  color: var(--black3);
-
+  padding: 0;
+  color: var(--black4);
+}
+.main h3::before {
+  content:"\2695";
+  margin-right: 0.25rem;
+  color: var(--blue);
 }
 .main a {
-  color: var(--gold2);
-  border-bottom: 1px dotted var(--gold2);
+  border-bottom: 1px dotted var(--blue);
+  color: var(--blue);
 }
 .main a:hover,
 .main a:focus {
-  color: var(--gold);
+  color: var(--blue2);
   border-bottom: 1px dotted transparent;
 }
 .last {
@@ -272,7 +272,7 @@ https://fonts.google.com/icons?icon.set=Material+Symbols */
 .main .material-symbols-outlined {
   margin-top: 0;
   margin-right: 0.5rem;
-  color: var(--gold2);
+  color: var(--blue);
 }
 /* GOOGLE MAPS FIX */
 iframe {
@@ -290,17 +290,15 @@ footer {
   text-transform: uppercase;
   text-align: center;
   line-height: 1.8;
-  background-color: var(--black);
   background-color: var(--blue);
-  color: var(--cream);
+  color: var(--white);
 }
-.footer-info a {
-  color: var(--gold);
-  color: var(--light-gray);
+footer a {
+  color: var(--white2);
 }
-.footer-info a:hover,
-.footer-info a:focus {
-  color: var(--gold);
+footer a:hover,
+footer a:focus {
+  color: var(--white);
 }
 .privacy-terms {
   margin-top: 1rem;
@@ -375,9 +373,6 @@ footer {
   .site-description {
     font-size: 1.25rem;
   }
-  .main h1 {
-    font-size: 2rem;
-  }
   .main h1,
   .main h2 {
     max-width: fit-content;
@@ -390,17 +385,11 @@ footer {
   nav {
     font-size: 0.875rem;
   }
-  .main h1 {
-    max-width: fit-content;
-  }
   .material-symbols-outlined {
     margin-right: -0.5rem;
   }
   .footer-info {
     font-size: 0.875rem;
-  }
-  .privacy-terms {
-
   }
 }
 @media screen and (min-width: 800px) {
