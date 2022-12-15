@@ -104,7 +104,7 @@ li:first-child {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-image: url('../img/checkup.jpg');
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 .overlay {
   display: flex;
