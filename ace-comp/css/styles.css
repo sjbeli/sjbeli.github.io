@@ -8,13 +8,15 @@
 /* And a few other redundant settings */
 :root {
   --blue: #3968B0;
-  --blue2: #054ab2;
+  --blue2: #0848a8;
 
   --black: black;
   --black2: #122620;
   --black3: #555;
   --black4: #777;
+
   --light-gray: #ccc;
+  --beige: burlywood;
 
   --white: white;
   --white2: #bbb;
@@ -25,7 +27,7 @@
 
   --transition: 0.3s;
 
-  --min-width: 290px;
+  --min-width: 300px;
   --max-width: 1920px;
   --max-width2: 800px; /* .main section only (max-readability) */
 }
@@ -97,8 +99,8 @@ li:first-child {
 /* HERO CONTAINER ITEMS */
 .hero-container {
   height: 100vh;
-  min-height: 555px;
-  max-height: 600px;
+  min-height: 633px;
+  max-height: 74vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -112,7 +114,7 @@ li:first-child {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: rgba(57, 104, 176, 0.1);
+  background-color: rgba(222, 184, 135, 0.2);
 }
 #logo {
   width: 120px;
@@ -123,6 +125,26 @@ img {
   display: block;
   margin-bottom: 0.5rem;
 }
+a {
+  color: var(--white);
+  text-decoration: none;
+  transition: var(--transition) ease-in-out all;
+  -webkit-transition: var(--transition);
+   -moz-transition: var(--transition);
+   -ms-transition: var(--transition);
+   -o-transition: var(--transition);
+}
+a:hover,
+a:focus {
+  color: var(--light-gray);
+  color: var(--beige);
+  border-bottom: none;
+}
+.pricing {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--blue);
+}
 .header-text {
   width: 100%;
   padding: 1rem 0.5rem 1.25rem;
@@ -132,10 +154,6 @@ img {
 }
 .phone {
   padding-bottom: 0;
-}
-.phone a:hover,
-.phone a:focus {
-  color: var(--light-gray);
 }
 
 /* FONT ITEMS */
@@ -165,25 +183,6 @@ h2, h3 {
 .site-description {
   font-size: 1rem;
   color: var(--white);
-}
-a {
-  color: var(--white);
-  text-decoration: none;
-  transition: var(--transition) ease-in-out all;
-  -webkit-transition: var(--transition);
-   -moz-transition: var(--transition);
-   -ms-transition: var(--transition);
-   -o-transition: var(--transition);
-}
-a:hover,
-a:focus {
-  color: var(--light-gray);
-  border-bottom: none;
-}
-.pricing {
-  font-weight: 400;
-  font-style: italic;
-  color: var(--black3);
 }
 
 /* MAIN SECTION ITEMS */
@@ -223,7 +222,7 @@ section p {
 .main h3:before {
   content:"\2695";
   padding-right: 0.25rem;
-  color: var(--blue);
+  color: var(--beige);
 }
 .main a {
   border-bottom: 1px dotted var(--blue);
@@ -253,7 +252,7 @@ https://fonts.google.com/icons?icon.set=Material+Symbols */
 .main .material-symbols-outlined {
   margin-top: 0;
   margin-right: 0.5rem;
-  color: var(--blue);
+  color: var(--beige);
 }
 /* GOOGLE MAPS FIX */
 iframe {
@@ -275,7 +274,13 @@ footer {
   color: var(--white3);
 }
 footer a {
-  color: var(--white2);
+  color: var(--light-gray);
+  border-bottom: 1px dotted transparent;
+}
+footer a:hover,
+footer a:active {
+  color: var(--beige);
+  border-bottom: 1px dotted var(--beige);
 }
 .privacy-terms {
   margin-top: 1rem;
