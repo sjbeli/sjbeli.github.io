@@ -1,6 +1,6 @@
 
 
-[github.com/sjbeli/sjbeli.github.io](https://github.com/sjbeli/sjbeli.github.io)
+Repo ink: [github.com/sjbeli/sjbeli.github.io](https://github.com/sjbeli/sjbeli.github.io)
 
 ## Project Repo
 
@@ -10,9 +10,3 @@
 
 -   New **ACE Computer** website in development: [sjbeli.github.io/ace-comp/](https://sjbeli.github.io/ace-comp/ "ACE Computer website in development")
 
-
----
-
-some emojis:
-
-:cyclone: :house_with_garden: :dog2: + :tophat: :performing_arts: :musical_score: :notebook: = :crystal_ball:
