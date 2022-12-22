@@ -417,9 +417,10 @@ footer a:active {
   .top-nav {
     justify-content: space-evenly;
   }
+  /* wtf, this is creating a screen-res problem in iPads!!
   .hero-container {
     background-attachment: fixed;
-  }
+  } */
   iframe {
     height: 500px;
   }
