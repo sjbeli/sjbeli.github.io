@@ -101,7 +101,7 @@ li:first-child {
   height: 100vh;
   min-height: 630px;
   max-height: 73vh;
-  max-width: var(--max-width;)
+  max-width: var(--max-width);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
