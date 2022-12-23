@@ -22,7 +22,7 @@
   --white3: #999;
 
   --opacity: 0.98;
-  --opacity2: 0.96;
+  --opacity2: 0.95;
 
   --transition: 0.3s;
 
@@ -173,7 +173,7 @@ h2, h3 {
   font-family: 'Dorsa';
   font-size: 3.5rem;
   font-weight: 800;
-  letter-spacing: 0.085em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--white);
 }
@@ -264,13 +264,12 @@ footer {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.7;
+  line-height: 1.6;
   padding: 1.5rem 0.5rem;
   background-color: var(--black3);
-  color: var(--white3);
+  color: var(--white2);
 }
 footer a {
-  color: var(--light-gray);
   border-bottom: 1px dotted transparent;
 }
 footer a:hover,
@@ -385,9 +384,6 @@ footer a:active {
   nav {
     font-size: 0.875rem;
   }
-  .material-symbols-outlined {
-    margin-right: -0.5rem;
-  }
   .footer-info {
     font-size: 0.875rem;
   }
@@ -396,6 +392,9 @@ footer a:active {
   }
 }
 @media screen and (min-width: 800px) {
+  li:first-child {
+    padding-right: 0;
+  }
   .main {
     max-width: var(--max-width2);
     margin-left: auto;
@@ -405,9 +404,6 @@ footer a:active {
 @media screen and (min-width: 900px) {
   nav {
     font-size: 1rem;
-  }
-  li:first-child {
-    padding-right: 0;
   }
   .top-nav {
     justify-content: space-evenly;
