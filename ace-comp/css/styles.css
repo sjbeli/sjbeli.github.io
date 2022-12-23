@@ -4,8 +4,7 @@
   box-sizing: border-box;
   margin: 0; padding: 0;
 }
-/* COLORS From: https://www.canva.com/colors/color-palettes/emerald-entrance/ */
-/* And a few other redundant settings */
+/* https://www.canva.com/colors/color-palettes/emerald-entrance/ */
 :root {
   --blue: #3968B0;
   --blue2: #0848a8;
@@ -124,7 +123,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  /* margin-bottom: 0.5rem; */
+  margin-bottom: 0.5rem;
 }
 a {
   color: var(--white);
@@ -238,11 +237,6 @@ section p {
   padding-bottom: 2.25rem;
 }
 
-/* INFO FOR CONTACT - PAYMENTS - LOCATION INFO */
-.main-bottom {
-  padding: rem 0;
-}
-
 /* MATERIAL-SYMBOLS-OUTLINED - GOOGLE FONTS & ICONS/SYMBOLS:
 https://fonts.google.com/icons?icon.set=Material+Symbols */
 .material-symbols-outlined {
@@ -255,6 +249,7 @@ https://fonts.google.com/icons?icon.set=Material+Symbols */
   margin-right: 0.5rem;
   color: var(--beige);
 }
+
 /* GOOGLE MAPS FIX */
 iframe {
   margin: 1rem 0;
@@ -374,7 +369,7 @@ footer a:active {
   }
   .smcaps {
   font-size: 4.25rem;
-}
+  }
   .site-description {
     font-size: 1.25rem;
   }
@@ -417,10 +412,6 @@ footer a:active {
   .top-nav {
     justify-content: space-evenly;
   }
-  /* wtf, this is creating a screen-res problem in iPads!!
-  .hero-container {
-    background-attachment: fixed;
-  } */
   iframe {
     height: 500px;
   }
