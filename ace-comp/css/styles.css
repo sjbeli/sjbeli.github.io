@@ -1,4 +1,4 @@
-/* © sjbeli */
+/* ©∞ sjbeli */
 /* RESET ITEMS */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -6,23 +6,22 @@
 }
 /* https://www.canva.com/colors/color-palettes/emerald-entrance/ */
 :root {
-  --blue: #3968B0;
-  --blue2: #0848a8;
-
   --black: black;
-  --black2: #122620;
+  --black2: #333;
   --black3: #555;
   --black4: #777;
-
-  --light-gray: #ccc;
-  --beige: burlywood;
 
   --white: white;
   --white2: #bbb;
   --white3: #999;
 
-  --opacity: 0.98;
-  --opacity2: 0.95;
+  --light-gray: lightgray;
+
+  --beige: burlywood;
+  --blue: #3968B0;
+
+  --opacity: 0.99;
+  --opacity2: 0.92;
 
   --transition: 0.3s;
 
@@ -34,7 +33,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* BODY */
+/* BODY ITEMS */
 body {
   display: flex;
   flex-direction: column;
@@ -60,13 +59,12 @@ nav {
   background-color: var(--blue);
   filter: opacity(var(--opacity));
 }
-ul {
+.top-nav {
   display: flex;
   flex-wrap: wrap;
-}
-.top-nav {
+  align-items: center;
+  justify-content: space-evenly;
   list-style-type: none;
-  justify-content: center;
 }
 li a {
   display: block;
@@ -86,11 +84,11 @@ li a {
 .about-list li a:first-child {
   display: inline;
 }
-/* ADJUST HOME ICON (nav) VERTICAL ORIENTATION (google!) */
+/* ADJUST HOME ICON (nav) VERTICAL ORIENTATION */
 li:first-child {
   margin-bottom: -5px;
 }
-/* NOW NEED TO RE-ADJUST ABOUT-LIST :first-child BECAUSE ABOVE (google) */
+/* NOW NEED TO RE-ADJUST ABOUT-LIST :first-child BECAUSE OF HOME ICON ABOVE */
 .about-list li:first-child {
   margin-bottom: 0;
 }
@@ -136,7 +134,6 @@ a {
 }
 a:hover,
 a:focus {
-  color: var(--light-gray);
   color: var(--beige);
   border-bottom: none;
 }
@@ -225,13 +222,13 @@ section p {
   color: var(--beige);
 }
 .main a {
-  border-bottom: 1px dotted var(--blue);
+  border-bottom: 1px dotted transparent;
   color: var(--blue);
 }
 .main a:hover,
 .main a:focus {
-  color: var(--blue2);
-  border-bottom: 1px dotted transparent;
+  border-bottom: 1px dotted var(--beige);
+  color: var(--beige);
 }
 .last {
   padding-bottom: 2.25rem;
@@ -266,16 +263,12 @@ footer {
   text-align: center;
   line-height: 1.6;
   padding: 1.5rem 0.5rem;
-  background-color: var(--black3);
+  background-color: var(--black2);
   color: var(--white2);
-}
-footer a {
-  border-bottom: 1px dotted transparent;
 }
 footer a:hover,
 footer a:active {
   color: var(--beige);
-  border-bottom: 1px dotted var(--beige);
 }
 .privacy-terms {
   margin-top: 1rem;
@@ -297,7 +290,8 @@ footer a:active {
   display: flex;
   align-items: center;
 }
-/********* BEGIN MEDIA QUERIES ***********/
+
+/********* BEGIN ALL MEDIA QUERIES ***********/
 @media screen and (min-width: 342px) {
   .header-text {
     margin: 1.375rem 0;
@@ -320,20 +314,16 @@ footer a:active {
     padding-top: 3.75rem;
   }
   /* REPAIR, SPYWARE, DATA, NETWORKS ANCHOR FIX 3 of 3 */
-#repair, #spyware, #data, #networks {
+  #repair, #spyware, #data, #networks {
     margin-top: -5.075rem;
     padding-top: 5.075rem;
-  }
-  ul {
-    padding: 0 1rem;
-    align-items: center;
-    flex-wrap: nowrap;
   }
   nav {
     padding: 0;
   }
   .top-nav {
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 0 1rem;
   }
   li {
     padding-right: 1rem;
@@ -405,12 +395,8 @@ footer a:active {
   nav {
     font-size: 1rem;
   }
-  .top-nav {
-    justify-content: space-evenly;
-  }
   iframe {
     height: 500px;
   }
 }
-/********* END MEDIA QUERIES ***********/
-/* END FILE */
+/********* END ALL MEDIA QUERIES ***********/
