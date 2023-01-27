@@ -41,11 +41,25 @@ body {
   background-color: var(--white);
   font-family: 'Quicksand', sans-serif;
 }
-body,
-nav {
+a {
+  color: var(--white);
+  text-decoration: none;
+  transition: var(--transition) ease-in-out all;
+  -webkit-transition: var(--transition);
+   -moz-transition: var(--transition);
+   -ms-transition: var(--transition);
+   -o-transition: var(--transition);
+}
+a:hover,
+a:focus {
+  color: var(--beige);
+  border-bottom: none;
+}
+body, nav {
   min-width: var(--min-width);
   max-width: var(--max-width);
 }
+/* END BODY ITEMS */
 
 /* NAVIGATION ITEMS */
 nav {
@@ -92,6 +106,7 @@ li:first-child {
 .about-list li:first-child {
   margin-bottom: 0;
 }
+/* END NAVIGATION ITEMS */
 
 /* HERO CONTAINER ITEMS */
 .hero-container {
@@ -123,20 +138,6 @@ img {
   display: block;
   margin-bottom: 0.5rem;
 }
-a {
-  color: var(--white);
-  text-decoration: none;
-  transition: var(--transition) ease-in-out all;
-  -webkit-transition: var(--transition);
-   -moz-transition: var(--transition);
-   -ms-transition: var(--transition);
-   -o-transition: var(--transition);
-}
-a:hover,
-a:focus {
-  color: var(--beige);
-  border-bottom: none;
-}
 .pricing {
   font-weight: 400;
   font-style: italic;
@@ -152,6 +153,7 @@ a:focus {
 .phone {
   padding-bottom: 0;
 }
+/* END HERO CONTAINER ITEMS */
 
 /* FONT ITEMS */
 h1 {
@@ -181,6 +183,7 @@ h2, h3 {
   font-size: 1rem;
   color: var(--white);
 }
+/* END FONT ITEMS */
 
 /* MAIN SECTION ITEMS */
 section h2,
@@ -233,6 +236,7 @@ section p {
 .last {
   padding-bottom: 2.25rem;
 }
+/* END MAIN SECTION ITEMS */
 
 /* MATERIAL-SYMBOLS-OUTLINED - GOOGLE FONTS & ICONS/SYMBOLS:
 https://fonts.google.com/icons?icon.set=Material+Symbols */
@@ -274,6 +278,7 @@ footer a:active {
   margin-top: 1rem;
   font-size: .625rem;
 }
+/* END FOOTER ITEMS */
 
 /* PAGE ANCHOR FIXES */
 /* CONTACT ANCHOR FIX 1 of 4 */
