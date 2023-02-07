@@ -2,7 +2,6 @@
   --black: black;
   --black2: #333;
   --black3: #555;
-  --black4: #777;
 
   --white: white;
   --white2: #bbb;
@@ -203,19 +202,16 @@ section p {
   padding-bottom: 1.5rem;
   color: var(--black);
 }
-.main h2 {
-  color: var(--black2);
-}
 .main h2,
 .main h3 {
   line-height: 1.5;
+  color: var(--black2);
 }
 .main h3 {
   width: fit-content;
   margin-top: 0.5rem;
   font-size: 1.125rem;
   padding: 0;
-  color: var(--black4);
 }
 .main h3:before {
   content:"\2695";
