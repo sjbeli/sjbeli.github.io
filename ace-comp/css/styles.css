@@ -1,9 +1,3 @@
-/* RESET ITEMS */
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0; padding: 0;
-}
-/* https://www.canva.com/colors/color-palettes/emerald-entrance */
 :root {
   --black: black;
   --black2: #333;
@@ -21,12 +15,17 @@
 
   --opacity: 0.99;
   --opacity2: 0.92;
-
   --transition: 0.3s;
 
   --min-width: 300px;
   --max-width: 1920px;
-  --max-width2: 800px; /* .main section only (for max-readability) */
+  --max-width2: 800px; /* .main section only @min 800px (for max-readability) */
+}
+
+/* RESET ITEMS */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
 }
 html {
   scroll-behavior: smooth;
@@ -296,6 +295,7 @@ footer a:active {
 }
 
 /********* BEGIN ALL MEDIA QUERIES ***********/
+
 @media screen and (min-width: 342px) {
   .header-text {
     margin: 1.375rem 0;
@@ -311,6 +311,7 @@ footer a:active {
     padding-top: 7.5rem;
   }
 }
+
 @media screen and (min-width: 515px) {
   /* CONTACT ANCHOR FIX 3 of 4 */
   #contact {
@@ -361,7 +362,7 @@ footer a:active {
     font-size: 5rem;
   }
   .smcaps {
-  font-size: 4.25rem;
+    font-size: 4.25rem;
   }
   .site-description {
     font-size: 1.25rem;
@@ -374,6 +375,7 @@ footer a:active {
     font-size: 1.25rem;
   }
 }
+
 @media screen and (min-width: 660px) {
   /* CONTACT ANCHOR FIX 4 of4 */
   #contact {
@@ -395,6 +397,7 @@ footer a:active {
     font-size: 0.75rem;
   }
 }
+
 @media screen and (min-width: 800px) {
   li:first-child {
     padding-right: 0;
@@ -405,6 +408,7 @@ footer a:active {
     margin-right: auto;
   }
 }
+
 @media screen and (min-width: 900px) {
   nav {
     font-size: 1rem;
