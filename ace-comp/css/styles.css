@@ -1,10 +1,9 @@
-/* ©∞ sjbeli */
 /* RESET ITEMS */
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0; padding: 0;
 }
-/* https://www.canva.com/colors/color-palettes/emerald-entrance/ */
+/* https://www.canva.com/colors/color-palettes/emerald-entrance */
 :root {
   --black: black;
   --black2: #333;
@@ -27,7 +26,7 @@
 
   --min-width: 300px;
   --max-width: 1920px;
-  --max-width2: 800px; /* .main section only (max-readability) */
+  --max-width2: 800px; /* .main section only (for max-readability) */
 }
 html {
   scroll-behavior: smooth;
