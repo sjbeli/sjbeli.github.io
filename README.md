@@ -1,12 +1,12 @@
 
 
-Repo ink: [github.com/sjbeli/sjbeli.github.io](https://github.com/sjbeli/sjbeli.github.io)
+My GitHub: [github.com/sjbeli/](https://github.com/sjbeli/)
 
 ## Project Repo
 
 
--   **ACE Computer** current site: [acecomputernh.com](https://acecomputernh.com/ "Current ACE Computer website")
+-   **ACE Computer** current: [acecomputernh.com](https://acecomputernh.com/ "Current ACE Computer website")
 
 
--   New **ACE Computer** website in development: [sjbeli.github.io/ace](https://sjbeli.github.io/ace/ "ACE Computer website in development")
+-   **ACE Computer** website in development: [sjbeli.github.io/ace](https://sjbeli.github.io/ace/ "ACE Computer website in development")
 
