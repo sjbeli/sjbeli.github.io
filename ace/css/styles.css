@@ -179,12 +179,15 @@ h2, h3 {
   font-size: 1rem;
   color: var(--white);
 }
+address {
+  font-style: normal;
+}
 /* END FONT ITEMS */
 
 /* MAIN SECTION ITEMS */
-section h2,
-section h3,
-section p {
+main h2,
+main h3,
+main p {
   padding-bottom: 0.5rem;
 }
 .main {
