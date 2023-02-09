@@ -185,9 +185,9 @@ address {
 /* END FONT ITEMS */
 
 /* MAIN SECTION ITEMS */
-main h2,
-main h3,
-main p {
+header h2, main h2,
+header h3, main h3,
+header p, main p {
   padding-bottom: 0.5rem;
 }
 .main {
