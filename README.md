@@ -4,9 +4,8 @@ My GitHub: [github.com/sjbeli/](https://github.com/sjbeli/)
 
 ... nothing to see here
 
-Oh, wait - the ACE site is also here:
-
-[acecomputernh.netlify.app](https://acecomputernh.netlify.app/ "ACE website in development"
+Oh, wait - the ACE site can also be found here:
+[acecomputernh.netlify.app](https://acecomputernh.netlify.app/ "ACE website in development")
 
 <!-- -   **ACE Computer** current: [acecomputernh.com](https://acecomputernh.com/ "Current ACE Computer website") -->
 
