@@ -1,0 +1,113 @@
+/* entry content [main page section] ****************/
+@use '../abstracts' as *;
+
+.entry-content {
+  line-height: 1.6;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 2rem 0.25rem $primaryBlack;
+
+  @include atMedium {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include atLarge {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @include atXLarge {
+    max-width: $maxWidthContent;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: $primaryBlack;
+  }
+
+  & h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.625rem;
+    margin-top: -9.675rem;
+    padding-top: 9.675rem;
+
+    @include atXSmall {
+      margin-top: -10.25rem;
+      padding-top: 10.25rem;
+    }
+
+    @include atMedium {
+      font-size: 1.75rem;
+    }
+
+    @include atLarge {
+      font-size: 2rem;
+    }
+  }
+
+  & h2 {
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+
+    @include atMedium {
+      font-size: 1.5rem;
+    }
+
+    @include atLarge {
+      font-size: 1.625rem;
+    }
+  }
+
+  & p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+/* limit chars on front-page-top-info - it keeps things nice */
+.limit-20-char,
+.limit-35-char,
+.limit-48-char {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.limit-20-char {
+  max-width: 20ch;
+}
+
+.limit-35-char {
+  max-width: 35ch;
+}
+
+.limit-48-char {
+  max-width: 52ch;
+}
+
+@include atXSmall {
+  .limit-35-char {
+    max-width: 40ch;
+  }
+}
+
+@include atSmall {
+  .limit-20-char {
+    max-width: 65ch;
+  }
+
+  .limit-35-char {
+    max-width: 80ch;
+  }
+}
+
+@include atMedium {
+  .limit-48-char {
+    max-width: fit-content;
+  }
+}
+
+/* reset menu images to 100% opacity */
+.reset-opacity img {
+  opacity: 1 !important;
+}

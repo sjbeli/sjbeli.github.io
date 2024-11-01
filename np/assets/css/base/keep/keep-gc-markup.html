@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .gc-block {
+      font-family: Arial, Helvetica, sans-serif;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+      justify-content: center;
+      align-content: center;
+      gap: 1.25rem;
+    }
+
+    .gc-block .pay-pal-item {
+      background-color: red;
+      border-radius: 1rem;
+      border: 3px dashed black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      min-height: 140px;
+    }
+
+    .gc-block p {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .check-your-cart {
+      margin-top: 1.5rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <!-- THE OLD -->
+
+
+<div class="gc-block">
+  <div class="pay-pal-item one">
+    <p>$25 Gift Card</p>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="Z7XSYUG7ZH362">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+          alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+  </div>
+  <div class="pay-pal-item two">
+    <p>$50 Gift Card</p>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="BVP9DTJ2QCS6G">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+        alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+  </div>
+  <div class="pay-pal-item three">
+    <p>$75 Gift Card</p>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="JHE5WQMZS7SBQ">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+        alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+  </div>
+  <div class="pay-pal-item three">
+    <p>$100 Gift Card</p>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="93WHQ5J2JD59G">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+        alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+  </div>
+  <div class="pay-pal-item four">
+    <p>$250 Gift Card</p>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="SMK9W4XBVCXS2">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+        alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+  </div>
+  <div class="pay-pal-item five">
+    <p>$500 Gift Card</p>
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="9XWR2ARE8R3DU">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" name="submit"
+        alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+  </div>
+</div>
+
+<div class="check-your-cart">
+  <p>Check / View Your Cart</p>
+  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr"
+    method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="encrypted"
+      value="-----BEGIN PKCS7-----MIIG1QYJKoZIhvcNAQcEoIIGxjCCBsICAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYA0fg3rIJqYaJ1OpHasyhLSfzdjVMHY6d/CoYoHVR4BzMKu1brZxDctsoKeir1C8j6LW1cM4Qscm/r7i8NJFQrnvINABrzuCMLwemMqu3MqulACzh1roOKAUh/You9k96fcPuN5hV67JyQpOcxIRnW+XM33/CpMJ3GKhQKIoaBzXjELMAkGBSsOAwIaBQAwUwYJKoZIhvcNAQcBMBQGCCqGSIb3DQMHBAgGME+rzlBqXYAwgklPvytv0XQKPvONhZMFLYVH3bDz5i9hLzUkxKJg5/h+/KY6qp6sGgglttTe8YINoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjAwMTMwMTgzNTM4WjAjBgkqhkiG9w0BCQQxFgQUjmBisbR7fMMhE3M4dw0PxnzQW0UwDQYJKoZIhvcNAQEBBQAEgYAqv+3vhmWjnc21+AYaGoLa219XvYJzt5v4P7CuD96ICKJliriKy77KO0Tire8IbTgmQJB9dadBRjpjvW2UjcGJvja1L5EPJIZXQAG1nQB8Xa4wEcYnsOFh6SyIcIIPcVLpyY47e6dFZxacFPyPLOSvH5gnrbnC4ThLMY7wWz393Q==-----END PKCS7-----">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" name="submit" alt="">
+  </form>
+</div>
+
+
+<!-- THE NEW -->
+
+<div id="smart-button-container">
+  <div style="text-align:center">
+    <div class="selection-list-container">
+
+     <h3>Make Selections Here:</h3>
+
+      <div class="choose-options">
+        <select id="item-options" class="option-fix first">
+          <option value="$25 North Point Gift Card" price="25"> $25 NP Gift Card</option>
+          <option value="$50 North Point Gift Card" price="50" selected> $50 NP Gift Card</option>
+          <option value="$75 North Point Gift Card" price="75"> $75 NP Gift Card</option>
+          <option value="$100 North Point Gift Card" price="100"> $100 NP Gift Card</option>
+          <option value="$150 North Point Gift Card" price="150"> $150 NP Gift Card</option>
+          <option value="$200 North Point Gift Card" price="200"> $200 NP Gift Card</option>
+          <option value="$250 North Point Gift Card" price="250"> $250 NP Gift Card</option>
+          <option value="$300 North Point Gift Card" price="300"> $300 NP Gift Card</option>
+          <option value="$500 North Point Gift Card" price="500"> $500 NP Gift Card</option>
+        </select>
+
+        <select style="visibility: hidden" id="quantitySelect" class="option-fix">
+          <option value=""> how many? </option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+    </div>
+    <div id="paypal-button-container"></div>
+  </div>
+</div>
+<script
+  src="https://www.paypal.com/sdk/js?client-id=AV6DhzlkdnS6eFkDeje-Kdq_T2DAvFoROeXTBJqXswHwILkADLoLgi6R3zYYzQoplRHmcKTENwp5A7eT&amp;currency=USD"
+  data-sdk-integration-source="button-factory"></script>
+<script>
+  function initPayPalButton() {
+    var shipping = 0;
+    var itemOptions = document.querySelector("#smart-button-container #item-options");
+    var quantity = parseInt(5);
+    var quantitySelect = document.querySelector("#smart-button-container #quantitySelect");
+    if (!isNaN(quantity)) {
+      quantitySelect.style.visibility = "visible";
+    }
+    var orderDescription = '';
+    if (orderDescription === '') {
+      orderDescription = 'Item';
+    }
+    paypal.Buttons({
+      style: {
+        shape: 'pill',
+        color: 'white',
+        layout: 'horizontal',
+        label: 'buynow',
+
+      },
+      createOrder: function (data, actions) {
+        var selectedItemDescription = itemOptions.options[itemOptions.selectedIndex].value;
+        var selectedItemPrice = parseFloat(itemOptions.options[itemOptions.selectedIndex].getAttribute("price"));
+        var tax = (0 === 0) ? 0 : (selectedItemPrice * (parseFloat(0) / 100));
+        if (quantitySelect.options.length > 0) {
+          quantity = parseInt(quantitySelect.options[quantitySelect.selectedIndex].value);
+        } else {
+          quantity = 1;
+        }
+
+        tax *= quantity;
+        tax = Math.round(tax * 100) / 100;
+        var priceTotal = quantity * selectedItemPrice + parseFloat(shipping) + tax;
+        priceTotal = Math.round(priceTotal * 100) / 100;
+        var itemTotalValue = Math.round((selectedItemPrice * quantity) * 100) / 100;
+
+        return actions.order.create({
+          purchase_units: [{
+            description: orderDescription,
+            amount: {
+              currency_code: 'USD',
+              value: priceTotal,
+              breakdown: {
+                item_total: {
+                  currency_code: 'USD',
+                  value: itemTotalValue,
+                },
+                shipping: {
+                  currency_code: 'USD',
+                  value: shipping,
+                },
+                tax_total: {
+                  currency_code: 'USD',
+                  value: tax,
+                }
+              }
+            },
+            items: [{
+              name: selectedItemDescription,
+              unit_amount: {
+                currency_code: 'USD',
+                value: selectedItemPrice,
+              },
+              quantity: quantity
+            }]
+          }]
+        });
+      },
+      onApprove: function (data, actions) {
+        return actions.order.capture().then(function (details) {
+          alert('Transaction completed by ' + details.payer.name.given_name + '!');
+        });
+      },
+      onError: function (err) {
+        console.log(err);
+      },
+    }).render('#paypal-button-container');
+  }
+  initPayPalButton();
+</script>
+
+
+</body>
+</html>

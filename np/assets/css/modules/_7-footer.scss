@@ -1,0 +1,64 @@
+/* site footer **********************************/
+@use '../abstracts' as *;
+
+footer {
+  padding: 0 0.25rem 1rem;
+  text-align: center;
+  background-color: $primaryBlack;
+  box-shadow: 0 0 2rem 0.25rem $primaryBlack;
+
+  & p {
+    line-height: 1.875em;
+    font-size: 0.875rem;
+    margin-top: 0;
+
+    @include atXSmall {
+      font-size: 1rem;
+    }
+  }
+
+  & a {
+    border-bottom: none;
+  }
+}
+
+.social {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+
+  & i {
+    transform: rotate(0);
+    transition: $theTransition;
+
+    &:hover {
+      transform: rotate(-5deg);
+    }
+  }
+
+  & a {
+    margin-right: 1.25em;
+
+    & i {
+      color: $primaryGold;
+    }
+
+    @include atMedium {
+      margin-right: 2.5em;
+      font-size: 1.25em;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: none;
+
+      & i {
+        color: $primaryHover;
+      }
+    }
+  }
+}

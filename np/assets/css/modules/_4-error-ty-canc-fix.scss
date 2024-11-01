@@ -1,0 +1,39 @@
+/* fix 404 error / thank-you / cancelled-order pages
+[see: /template-parts/content-none.php & /template-parts/content-page.php] */
+@use '../abstracts' as *;
+
+.error-404,
+.mt-fix-title-content-page {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.5rem;
+  max-width: 700px;
+
+  & form {
+    @include atXSmall {
+      text-align: center;
+    }
+  }
+}
+
+.error-404 h1,
+.mt-fix-title-content-page h1 {
+  margin-top: -1.75rem;
+  padding-top: 3.75rem;
+  padding-bottom: 0.5rem;
+}
+
+/* fix margins thank-you / cancelled-order pages **************/
+.mt-fix-title-content-page .wp-block-cover__inner-container {
+
+  @include atSmall {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* fix cover-background-image - thank you / cancel pages */
+.gift-card-order-title {
+  background-size: auto !important;
+  align-items: flex-start;
+}

@@ -1,0 +1,122 @@
+/* general gutenberg-block Wide/Full images fixes ****/
+@use '../abstracts' as *;
+
+.alignwide,
+.alignfull {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.alignfull {
+  width: 100vw;
+  max-width: $maxWidthContent;
+  margin-left: -6%;
+
+  @include atAbsMinWidth {
+    margin-left: calc(50% - 50vw);
+  }
+
+  @include atMedium {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include atXLarge {
+    margin-left: calc((100% - 1280px) / 2);
+  }
+}
+
+.wp-block-image.alignfull img {
+  @include atLarge {
+    max-width: $maxWidthContent;
+  }
+}
+
+/* front-page NP-TOP-FULL-WIDTH .cover-image fix **********/
+.cover-image {
+  min-height: 90vh !important;
+  filter: grayscale(5%) brightness(115%);
+
+/* make cover image contact info white - on :hover state */
+  a {
+    border-bottom: none;
+    color: $primaryWhite;
+
+    &:hover {
+      color: $primaryGold;
+    }
+  }
+
+  .mb-1 {
+    margin-bottom: -1rem;
+  }
+}
+
+/* Additional fixed, background (of block-type-cover) images made 1,2,3 in case more images added ******************/
+.cover-image-1,
+.cover-image-2 {
+  margin: 0 -1rem;
+  width: calc(100% + 2rem)
+}
+
+.cover-image-1,
+.cover-image-2,
+.cover-image-3 {
+  min-height: 30vh !important;
+
+  @include atMedium {
+    min-height: 40vh !important;
+  }
+}
+
+/* front-page h3 & h4 .cover-image-title fix *********/
+.cover-image .wp-block-cover__inner-container {
+  max-width: 70vw;
+  min-width: 250px;
+  margin-top: -7.5rem;
+  padding-bottom: 1rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: $primaryBlack;
+  opacity: 0.90;
+
+  @include atSmall {
+    max-width: 65vw;
+    margin-top: -3.75rem;
+  }
+
+  @include atMedium {
+    margin-top: -1.875rem;
+  }
+
+  @include atLarge {
+    max-width: 60vw;
+    margin-top: 0;
+  }
+
+  @include atXLarge {
+    max-width: 780px;
+  }
+}
+
+.cover-image-title {
+  font-size: 1.25rem;
+
+  @include atSmall {
+    font-size: 1.75rem;
+  }
+
+  @include atMedium {
+    font-size: 2.5rem;
+  }
+}
+
+.wp-block-cover__inner-container h4 {
+  font-size: 1rem;
+
+  @include atMedium {
+    font-size: 1.25rem;
+  }
+}

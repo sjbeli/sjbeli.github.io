@@ -1,0 +1,73 @@
+/* fa icons - head to toe!
+note: .fab icons DO NOT work */
+@use '../abstracts' as *;
+
+.has-fa-icon,
+.fa, .far, .fas {
+
+  &:before,
+  &:after {
+    font-family: "Font Awesome 5 Free";
+    color: $primaryHover;
+  }
+
+  &:before {
+    padding-right: 0.5rem;
+  }
+
+  &::after {
+    padding-left: 0.325rem;
+  }
+}
+
+/* makes all :before icons change on hover in these areas */
+.cover-image i,
+.entry-content i {
+
+  &:hover:before {
+    color: $primaryGold;
+    transition: $theTransition;
+  }
+}
+
+/* fa icon codes */
+.find-us:before {
+  content: "\f3c5";
+}
+.phone:before {
+  content: "\f3cd";
+}
+
+.food-drink:before,
+.indoor-dining:before,
+.reservations:before,
+.menu:before {
+  content: "\f2e7";
+}
+.food-drink:after {
+  content: "\f561";
+}
+
+.covid-19:before {
+  content: "\e063";
+}
+
+.gift-cards:before {
+  content: "\f06b";
+}
+
+.children:before {
+  content: "\f1ae";
+}
+
+.service-dogs:before {
+  content: "\f1b0";
+}
+
+.outdoor-seating:before {
+  content: "\f185";
+}
+
+.press:before {
+  content: "\f1ea";
+}

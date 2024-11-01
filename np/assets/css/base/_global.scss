@@ -1,0 +1,91 @@
+@use '../abstracts' as *;
+/*
+Theme Name: northpoint
+Author: sjbeli
+Author URI: https://github.com/sjbeli
+Description: The NorthPoint Theme is an exclusive build for The North Point Restaurant in Portland Maine - specifically for WP-Gutenberg-Block-Editor use.
+Version: 2.4
+Last Updated: 11-13-2021 17:33 (mixin~abs-min-width:300px)
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: northpoint
+*/
+/* Global Items *******************/
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  min-width: $absMinWidth;
+  max-width: $maxWidthPg;
+  font-family: $primaryFont;
+}
+
+/* add blend mode to bkgrnd, remove custom-background image on lg screens */
+/* background color controlled by wp-dashboard-customizer */
+.custom-background {
+  background-blend-mode: darken;
+
+  @media (max-width: 1279px) {
+    background-image: none !important;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+}
+
+.wrapper {
+  margin-bottom: 2.5rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primaryGold;
+}
+
+p {
+  color: $secondaryWhite;
+}
+
+/* fixes press ul-lists entries */
+ul li::marker {
+  color: $primaryHover;
+}
+
+a {
+  color: $primaryGold;
+  border-bottom: 1px dotted $primaryHover;
+  text-decoration: none;
+  transition: $theTransition;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: $primaryHover;
+  border-bottom: none;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.hidden-for-now {
+  display: none;
+}

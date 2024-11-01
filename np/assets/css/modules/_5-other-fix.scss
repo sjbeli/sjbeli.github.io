@@ -1,0 +1,79 @@
+/* all other images */
+@use '../abstracts' as *;
+
+figure img {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  transition: $theTransition;
+
+  &:hover,
+  &focus,
+  &:active {
+    opacity: 1;
+  }
+}
+
+/* fix ORDER buttons [.entry-content, not header] - hover state change *********/
+.wp-block-buttons a {
+  filter: opacity(0.9);
+  padding: 0.625rem 0.75rem;
+  border-bottom: none;
+  font-size: 0.875rem;
+  font-family: $secondaryFont;
+  letter-spacing: -1px;
+
+  @include atXSmall {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  @include atMedium {
+    font-size: 1.125rem;
+    padding: 0.875rem 1.25rem;
+  }
+
+  &:hover {
+    border-bottom: none;
+    filter: opacity(1);
+  }
+}
+
+/* google map fixes ******/
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  height: 0;
+
+  @include atSmall {
+    padding-bottom: 60%;
+  }
+
+  @include atLarge {
+    padding-bottom: 50%;
+  }
+
+  & iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+/* press images fix: changes text on press / media captions to WHITE */
+.wp-block-image figcaption {
+  color: $primaryWhite;
+}
+
+/* fix FEED KIDS margins, then put back - @601px */
+.wp-block-media-text .wp-block-media-text__content {
+  padding: 2em 0 0;
+
+  @media (min-width: 601px) {
+    padding: 0;
+    padding-left: 8%;
+  }
+}
