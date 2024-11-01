@@ -17,4 +17,4 @@
 
       <!-- <p>Template: front-page.php</p> -->
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> 
